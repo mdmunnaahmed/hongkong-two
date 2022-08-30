@@ -1,0 +1,102 @@
+.btn,
+.cmn--btn {
+	padding: 8px 65px;
+	font-weight: 400;
+	outline: none !important;
+	box-shadow: none !important;
+	@extend %transition;
+	border-radius: 5px;
+	&.btn--lg {
+		padding: 8px 50px !important;
+		font-size: 18px;
+		@include breakpoint(max-lg) {
+			font-size: 16px;
+		}
+	}
+	&.btn--md {
+		padding: 10px 25px !important;
+		font-size: 15px;
+	}
+	&.btn--sm {
+		padding: 5px 15px !important;
+		font-size: 14px;
+	}
+	&.btn--xs {
+		padding: 0px 10px !important;
+		font-size: 13px;
+	}
+}
+.cmn--btn {
+	font-size: 22px;
+	color: hsl(var(--white));
+	overflow: hidden;
+	border: 2px solid hsl(var(--base));
+
+	@include breakpoint(max-xxl) {
+		font-size: 18px;
+	}
+	@include breakpoint(max-lg) {
+		font-size: 16px;
+	}
+	@include breakpoint(max-sm) {
+		padding: 8px 30px;
+	}
+}
+
+.cmn--btn {
+	background-color: hsl(var(--base));
+	&:hover,
+	&.active {
+		background: transparent;
+		color: hsl(var(--base));
+	}
+	&.active:hover {
+		color: hsl(var(--white));
+		background-color: hsl(var(--base));
+	}
+}
+.cmn--btn2 {
+	font-size: 18px;
+	background-color: hsl(var(--base-three));
+	border-color: hsl(var(--base-three));
+	@include breakpoint (max-lg) {
+		font-size: 16px;
+	}
+	&:hover {
+		color: hsl(var(--base-three));
+	}
+}
+
+$colors: "primary" hsl(var(--primary)), "secondary" hsl(var(--secondary)), "success" hsl(var(--success)), "danger" hsl(var(--danger)), "warning" hsl(var(--warning)), "info" var(--info), "light" hsl(var(--light)), "dark" hsl(var(--dark)),
+	"base" hsl(var(--base));
+
+@each $name, $color in $colors {
+	.btn--#{$name} {
+		background-color: $color;
+		border: 2px solid $color;
+		color: hsl(var(--white));
+		&:hover {
+			color: $color;
+		}
+	}
+}
+.btn--light {
+	color: hsl(var(--base));
+}
+
+@each $name, $color in $colors {
+	.btn--outline-#{$name} {
+		background-color: transparent;
+		border: 2px solid $color;
+		color: $color;
+		&:hover {
+			color: hsl(var(--white));
+			border-color: $color;
+			background-color: $color;
+		}
+	}
+}
+.btn--outline-light {
+	color: hsl(var(--body));
+	border: 2px solid hsl(var(--border));
+}

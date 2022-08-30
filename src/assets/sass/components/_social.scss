@@ -1,0 +1,28 @@
+.social-links {
+	li {
+		a {
+			width: 80px;
+			height: 80px;
+            @extend %flex-center;
+            border: 2px solid hsl(var(--base));
+            font-size: 26px;
+            border-radius: 50%;
+            color: hsl(var(--base));
+            @include breakpoint(max-xxl) {
+                width: 50px;
+                height: 50px;
+                font-size: 18px;
+            }
+            @include breakpoint(max-sm) {
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
+            }
+            &:hover {
+                color: hsl(var(--white));
+                background-color: hsl(var(--base));
+
+            }
+		}
+	}
+}

@@ -1,0 +1,233 @@
+<!-- meta tags and other links -->
+@@include('../partial-html/_template-top.html')
+<!-- Header Section -->
+<div class="responsive-header d-flex justify-content-between align-items-center bg-white d-lg-none shadow-none border-0 mb-0">
+    <div class="header-trigger"><i class="las la-bars"></i></div>
+    <h4 class="page-title">Album</h4>
+    <span class="search-trigger"><i class="las la-search"></i></span>
+</div>
+<!-- Header Section -->
+
+
+<div class="main-wrapper d-flex flex-wrap">
+    <div class="menu-sidebar  menu-icon-text-show">
+        <div class="logo menu-icon-text"><img src="assets/images/logo.png" alt="logo"></div>
+        <div class="logo menu-icon px-3"><img src="assets/images/short-logo.png" alt="logo"></div>
+        <ul class="menu">
+            <li>
+                <a class="menu-icon-text" href="index.html"><img src="assets/images/icon/gallery.png" alt="icon"> Gallery</a>
+                <a class="menu-icon" href="index.html"><img src="assets/images/icon/gallery.png" alt="icon"></a>
+            </li>
+            <li>
+                <a class="menu-icon-text" href="profile.html"><img src="assets/images/icon/profile.png" alt="icon"> Profile</a>
+                <a class="menu-icon" href="profile.html"><img src="assets/images/icon/profile.png" alt="icon"></a>
+            </li>
+            <li>
+                <a class="menu-icon-text" href="package.html"><img src="assets/images/icon/package.png" alt="icon"> Package</a>
+                <a class="menu-icon" href="package.html"><img src="assets/images/icon/package.png" alt="icon"></a>
+            </li>
+            <li>
+                <a class="menu-icon-text" href="qr.html"><img src="assets/images/icon/qr.png" alt="icon"> My QR</a>
+                <a class="menu-icon" href="qr.html"><img src="assets/images/icon/qr.png" alt="icon"></a>
+            </li>
+            <li>
+                <a class="menu-icon-text" href="shop.html"><img src="assets/images/icon/shop.png" alt="icon"> Shop</a>
+                <a class="menu-icon" href="shop.html"><img src="assets/images/icon/shop.png" alt="icon"></a>
+            </li>
+            <li>
+                <a class="menu-icon-text" href="cart.html"><img src="assets/images/icon/cart.png" alt="icon"> Cart</a>
+                <a class="menu-icon" href="cart.html"><img src="assets/images/icon/cart.png" alt="icon"></a>
+            </li>
+        </ul>
+        <ul class="menu mt-auto menu-icon-show">
+            <li>
+                <a class="menu-icon-text" href="faq.html"><img src="assets/images/icon/faq.png" alt="icon"> FAQs</a>
+                <a class="menu-icon" href="faq.html"><img src="assets/images/icon/faq.png" alt="icon"></a>
+            </li>
+            <li>
+                <a class="logout-btn menu-icon-text" href="javascript:void(0)" class="logout-btn"><img src="assets/images/icon/logout.png" alt="icon"> Logout</a>
+                <a class="logout-btn menu-icon" href="javascript:void(0)" class="logout-btn"><img src="assets/images/icon/logout.png" alt="icon"></a>
+            </li>
+        </ul>
+    </div>
+    <div class="body-content">
+        <div class="top-area">
+            <div class="search-box d-flex flex-wrap align-items-center">
+                <h3 class="title d-none d-lg-block">Album</h3>
+                <form class="search-form">
+                    <div class="form-group">
+                        <button type="submit" class="search-icon"><i class="las la-search"></i></button>
+                        <input type="text" placeholder="Search High-Resolution photos" class="form--control w-100">
+                    </div>
+                </form>
+            </div>
+            <div class="flex-wrap justify-content-between align-items-center mb-5 gap-4  d-none d-lg-flex">
+                <div class="d-flex flex-wrap gap-4">
+                    <a href="#0" class="cmn--btn">Scan</a>
+                    <a href="#0" class="cmn--btn">Purchase</a>
+                </div>
+                <select class="form-select form--control ps-4 pe-5 w-auto">
+                    <option>Photos</option>
+                    <option>Videos</option>
+                </select>
+            </div>
+            <ul class="nav-tabs nav justify-content-center mb-30 cmn--tabs d-lg-none">
+                <li><a href="#photos" data-bs-toggle="tab" class="active">Photos</a></li>
+                <li><a href="#videos" data-bs-toggle="tab">Videos</a></li>
+            </ul>
+        </div>
+        <div class="tab-content">
+            <div class="tab-pane show fade active" id="photos">
+                <div class="gallery-wrapper row gy-xxl-5 g-3 g-md-4">
+                    <div class="col-lg-6 col-xl-4 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/images/thumb/gallery1.png" alt="thumb">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/images/thumb/gallery2.png" alt="thumb">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/images/thumb/gallery3.png" alt="thumb">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/images/thumb/gallery4.png" alt="thumb">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/images/thumb/gallery5.png" alt="thumb">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/images/thumb/gallery6.png" alt="thumb">
+                        </div>
+                    </div>
+                </div>
+                <a href="#0" class="cmn--btn d-lg-none mt-4 d-block text-center">Purchase Package</a>
+            </div>
+            <div class="tab-pane fade" id="videos">
+                <div class="gallery-wrapper row gy-xxl-5 g-3 g-md-4">
+                    <div class="col-lg-6 col-xl-4 col-6">
+                        <div class="gallery-item video-item">
+                            <img src="assets/images/thumb/video1.png" alt="thumb">
+                            <a href="#0" class="create-video text-center">
+                                <span class="video-icon"><i class="fas fa-video"></i></span>
+                                <span class="text">Create Zoom Video</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-6">
+                        <div class="gallery-item video-item">
+                            <img src="assets/images/thumb/video1.png" alt="thumb">
+                            <a href="#0" class="create-video text-center">
+                                <span class="video-icon"><i class="fas fa-video"></i></span>
+                                <span class="text">Create Video Overlay</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-6">
+                        <div class="gallery-item video-item">
+                            <div class="bg-overlay">
+                                <img src="assets/images/thumb/video2.png" alt="thumb">
+                                <a href="#0" class="create-video text-center video-icon style--two">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-6">
+                        <div class="gallery-item video-item">
+                            <div class="bg-overlay">
+                                <img src="assets/images/thumb/video3.png" alt="thumb">
+                                <a href="#0" class="create-video text-center video-icon style--two">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-6">
+                        <div class="gallery-item video-item">
+                            <div class="bg-overlay">
+                                <img src="assets/images/thumb/video4.png" alt="thumb">
+                                <a href="#0" class="create-video text-center video-icon style--two">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-6">
+                        <div class="gallery-item video-item">
+                            <div class="bg-overlay">
+                                <img src="assets/images/thumb/video5.png" alt="thumb">
+                                <a href="#0" class="create-video text-center video-icon style--two">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#0" class="cmn--btn d-lg-none mt-4 d-block text-center">Purchase Package</a>
+            </div>
+        </div>
+        <div class="responsive-bottom-menu d-flex  justify-content-between align-items-center py-1 px-4 d-lg-none">
+            <div class="icon"><img src="assets/images/icon/gallery2.png" alt="icon"></div>
+            <span class="qr-scan-btn"><img src="assets/images/icon/qr2.png" alt="icon"></span>
+            <div class="icon"><img src="assets/images/icon/more.png" alt="icon"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Gallery Popup -->
+<div class="gallery-item style--two gallery-modal">
+    <img src="assets/images/thumb/gallery1.png" alt="thumb">
+    <a href="javascript:void(0)" class="cmn--btn d-block text-center mt-3 mt-sm-4 download-btn">Download</a>
+    <a href="javascript:void(0)" class="cmn--btn d-block text-center mt-3 mt-sm-4 active share-btn">Share</a>
+</div>
+<!-- Gallery Popup -->
+
+<!-- Share Popup -->
+<div class="popup-wrapper share-modal">
+    <p class="text-center fs--20px mb-3 mb-sm-4">Share in you social networks </p>
+    <ul class="social-links d-flex flex-wrap gap-3 justify-content-center">
+        <li><a href="javascript:void(0)"><i class="fas fa-copy"></i></a></li>
+        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+    </ul>
+</div>
+<!-- Share Popup -->
+
+<!-- Share Success -->
+<div class="popup-wrapper success-modal">
+    <div class="d-flex flex-wrap align-items-center justify-content-center flex-column h-100">
+        <img src="assets/images/icon/success.png" alt="icon">
+        <p class="fs--20px mt-2 text-center">Download Succeeded !</p>
+    </div>
+    <span class="modal-close"><i class="las la-times"></i></span>
+</div>
+<!-- Share Success -->
+
+<!-- Logout Success -->
+<div class="popup-wrapper logout-modal">
+    <div class="text-center">
+        <img src="assets/images/icon/alert.png" alt="thumb" class="mw-100">
+        <h4 class="mb-4 mb-sm-5 mt-4">Are You Sure !</h4>
+    </div>
+    <a href="javascript:void(0)" class="cmn--btn d-block text-center mt-3 mt-sm-4 ">Confirm</a>
+    <a href="javascript:void(0)" class="cmn--btn d-block text-center mt-3 mt-sm-4 active modal-cancel">Cancel</a>
+</div>
+<!-- Logout Success -->
+
+
+@@include('../partial-html/_footer.html')
+@@include('../partial-html/_template-bottom.html')
+</body>
+
+</html>
