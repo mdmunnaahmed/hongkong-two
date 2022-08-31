@@ -1,0 +1,145 @@
+<!-- Modal -->
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+            <div class="modal-body p-0">
+                <!-- Gallery Popup -->
+                <div class="popup-wrapper">
+                    <div class="gallery-item style--two ">
+                        <img src="assets/images/thumb/gallery1.png" alt="thumb">
+                        <button data-bs-toggle="modal" data-bs-target="#successModal" class="cmn--btn d-block w-100 mt-3 mt-sm-4">Download</button>
+                        <button data-bs-toggle="modal" data-bs-target="#shareModalOne" class="cmn--btn d-block w-100 mt-3 active">Share</button>
+                    </div>
+                </div>
+                <!-- Gallery Popup -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="shareModalOne" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content  bg-transparent border-0">
+            <div class="modal-body p-0">
+                <!-- Share Popup -->
+                <div class="popup-wrapper share-modal">
+                    <p class="text-center fs--20px mb-3 mb-sm-4 text--heading">Share in you social networks</p>
+                    <ul class="social-links d-flex flex-wrap gap-3 justify-content-center">
+                        <li><a href="javascript:void(0)"><i class="fas fa-copy"></i></a></li>
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <!-- Share Popup -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="shareModalTwo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content  bg-transparent border-0">
+            <div class="modal-body p-0">
+                <!-- Share Popup -->
+                <div class="popup-wrapper share-modal">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h6>Share</h6>
+                        <p class="mb-0">Selected (0 / 4)</p>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="gallery-item">
+                                <div class="form-group select-item position-relative">
+                                    <input type="checkbox" id="check01">
+                                    <label for="check01">
+                                        <img src="assets/images/thumb/gallery1.png" alt="thumb">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="gallery-item">
+                                <div class="form-group select-item position-relative">
+                                    <input type="checkbox" id="check02">
+                                    <label for="check02">
+                                        <img src="assets/images/thumb/gallery2.png" alt="thumb">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-6">
+                            <div class="gallery-item">
+                                <div class="form-group select-item position-relative">
+                                    <input type="checkbox" id="check03">
+                                    <label for="check03">
+                                        <img src="assets/images/thumb/gallery3.png" alt="thumb">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="gallery-item">
+                                <div class="form-group select-item position-relative">
+                                    <input type="checkbox" id="check04">
+                                    <label for="check04">
+                                        <img src="assets/images/thumb/gallery4.png" alt="thumb">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap mt-3 mt-sm-4 gap-2">
+                        <button class="cmn--btn btn--md active flex-grow-1" data-bs-dismiss="modal">Cancel</button>
+                        <button class="cmn--btn btn--md flex-grow-1">Share</button>
+                    </div>
+                </div>
+                <!-- Share Popup -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+            <div class="modal-body p-0">
+                <!-- Share Success -->
+                <div class="popup-wrapper success-modal">
+                    <div class="d-flex flex-wrap align-items-center justify-content-center flex-column h-100">
+                        <img src="assets/images/icon/success.png" alt="icon">
+                        <p class="fs--22px mt-4 px-5 text-center text--heading">Download Succeeded !</p>
+                        <button type="button" class="btn cmn--btn d-block mt-4 w-100" data-bs-dismiss="modal">Back</button>
+                    </div>
+                </div>
+                <!-- Share Success -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+            <div class="modal-body p-0">
+                <!-- Logout Success -->
+                <div class="popup-wrapper logout-modal">
+                    <div class="text-center">
+                        <img src="assets/images/icon/alert.png" alt="thumb" class="mw-100">
+                        <h4 class="mb-4 mb-sm-5 mt-4">Are You Sure !</h4>
+                    </div>
+                    <a href="javascript:void(0)" class="cmn--btn d-block text-center mt-3 mt-sm-4 ">Confirm</a>
+                    <a href="javascript:void(0)" data-bs-dismiss="modal" class="cmn--btn d-block text-center mt-3 active modal-cancel">Cancel</a>
+                </div>
+                <!-- Logout Success -->
+
+            </div>
+        </div>
+    </div>
+</div>

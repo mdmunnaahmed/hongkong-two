@@ -7,13 +7,13 @@
 
 	//Colors
 	--heading: 0 0% 0%;
-	--body: 223 22% 1%;
+	--body: 0 0% 52%;
 	--border: 196 15% 86%;
 
 	// Base Color Shade
-	--base-h: 238;
-	--base-s: 64%;
-	--base-l: 55%;
+	--base-h: 208;
+	--base-s: 100%;
+	--base-l: 60%;
 	--base: var(--base-h) var(--base-s) var(--base-l);
 	--base-two: 176 100% 46%;
 	--base-three: 208 100% 60%;
@@ -29,9 +29,9 @@
 	--base-900: var(--base-h) var(--base-s) calc(var(--base-l) - 20%);
 
 	// Accent Color Shade
-	--accent-h: 260;
-	--accent-s: 92%;
-	--accent-l: 10%;
+	--accent-h: 215;
+	--accent-s: 68%;
+	--accent-l: 28%;
 	--accent-50: var(--accent-h) var(--accent-s) calc(var(--accent-l) + 25%);
 	--accent-100: var(--accent-h) var(--accent-s) calc(var(--accent-l) + 20%);
 	--accent-200: var(--accent-h) var(--accent-s) calc(var(--accent-l) + 15%);

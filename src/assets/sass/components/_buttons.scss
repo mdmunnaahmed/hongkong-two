@@ -5,7 +5,7 @@
 	outline: none !important;
 	box-shadow: none !important;
 	@extend %transition;
-	border-radius: 5px;
+	border-radius: 15px;
 	&.btn--lg {
 		padding: 8px 50px !important;
 		font-size: 18px;
@@ -44,26 +44,27 @@
 }
 
 .cmn--btn {
-	background-color: hsl(var(--base));
+	background-color: hsl(var(--accent));
+	border-color: hsl(var(--accent));
 	&:hover,
 	&.active {
 		background: transparent;
-		color: hsl(var(--base));
+		color: hsl(var(--accent));
 	}
 	&.active:hover {
 		color: hsl(var(--white));
-		background-color: hsl(var(--base));
+		background-color: hsl(var(--accent));
 	}
 }
 .cmn--btn2 {
 	font-size: 18px;
-	background-color: hsl(var(--base-three));
-	border-color: hsl(var(--base-three));
+	background-color: hsl(var(--accent));
+	border-color: hsl(var(--accent));
 	@include breakpoint (max-lg) {
 		font-size: 16px;
 	}
 	&:hover {
-		color: hsl(var(--base-three));
+		color: hsl(var(--accent));
 	}
 }
 

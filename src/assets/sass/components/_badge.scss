@@ -9,8 +9,8 @@
 	color: hsl(var(--white));
 }
 .badge--three {
-	background-color: hsl(var(--base-three));
-	border: 1px solid hsl(var(--base-three));
+	background-color: hsl(var(--accent));
+	border: 1px solid hsl(var(--accent));
 	color: hsl(var(--white));
 }
 .badge--secondary {
@@ -46,8 +46,8 @@
 
 .badge {
 	border-radius: 18px;
-	padding: 7px 15px;
-	border-radius: 4px;
+	padding: 8px 15px;
+	border-radius: 10px;
 	font-weight: 400;
 	&.badge--icon {
 		padding: 5px;
