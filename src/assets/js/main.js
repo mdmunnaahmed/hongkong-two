@@ -179,3 +179,8 @@ $("#photoVideo").on("change", function () {
 		console.log(000);
 	}
 });
+
+
+$(".cross-btn").on("click", function () {
+	$(".cross-btn").closest(".failed-text").remove();
+});

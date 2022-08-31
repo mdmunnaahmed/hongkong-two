@@ -1,16 +1,17 @@
 .btn,
 .cmn--btn {
-	padding: 8px 65px;
-	font-weight: 400;
+	padding: 15px 65px;
+	font-weight: 500;
 	outline: none !important;
 	box-shadow: none !important;
 	@extend %transition;
-	border-radius: 15px;
+	border-radius: 10px;
 	&.btn--lg {
-		padding: 8px 50px !important;
-		font-size: 18px;
-		@include breakpoint(max-lg) {
+		@include breakpoint(max-xxl) {
+			padding: 10px 50px !important;
+			font-size: 18px;
 			font-size: 16px;
+			font-weight: 500;
 		}
 	}
 	&.btn--md {
@@ -27,7 +28,7 @@
 	}
 }
 .cmn--btn {
-	font-size: 22px;
+	font-size: 20px;
 	color: hsl(var(--white));
 	overflow: hidden;
 	border: 2px solid hsl(var(--base));
@@ -41,6 +42,17 @@
 	@include breakpoint(max-sm) {
 		padding: 8px 30px;
 	}
+	&.login-btn {
+		background-color: #D3D3D3;
+		color: #949494;
+		border-color: #D3D3D3;
+		&:hover {
+			background-color: hsl(var(--accent));
+			border-color: hsl(var(--accent));
+			color: hsl(var(--white));
+		}
+	}
+
 }
 
 .cmn--btn {
@@ -98,6 +110,16 @@ $colors: "primary" hsl(var(--primary)), "secondary" hsl(var(--secondary)), "succ
 	}
 }
 .btn--outline-light {
-	color: hsl(var(--body));
-	border: 2px solid hsl(var(--border));
+	color: hsl(var(--accent));
+	border: 2px solid hsl(var(--accent));
+	&:hover {
+		background-color: hsl(var(--accent));
+	}
+}
+.cmn--btn {
+    &.style-two {
+		background-color: #D3D3D3;
+		color: #949494;
+		border-color: #D3D3D3;
+	}
 }

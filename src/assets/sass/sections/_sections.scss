@@ -796,3 +796,243 @@ div[class*="col"]:nth-child(2) {
 	}
 }
 // Payment Card
+
+// Login Section
+.login-section {
+	position: relative;
+	z-index: 1;
+	.login-logo {
+		position: absolute;
+		top: 50px;
+		right: 50px;
+	}
+}
+.login-logo-two {
+	margin-top: 35px;
+	margin-bottom: 22px;
+}
+.login-thumb {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+
+	img {
+		width: 100%;
+		object-fit: cover;
+	}
+}
+.login-area {
+	@include breakpoint(xl) {
+		height: 100vh;
+	}
+}
+.login-wrapper {
+	width: 581px;
+	padding: 50px 47px 35px;
+	border: 1px solid #878787;
+	border-radius: 10px;
+	background-color: hsl(var(--white));
+	@include breakpoint(max-xxl) {
+		width: 450px;
+		padding: 40px 40px 25px;
+	}
+	@include breakpoint(max-sm) {
+		max-width: 450px;
+		padding: 0 5px;
+		border: none;
+		background-color: transparent;
+	}
+	.welcome-text {
+		font-size: 25px;
+		line-height: 1;
+		color: hsl(var(--heading));
+		margin-bottom: 35px;
+		@include breakpoint(max-xxl) {
+			margin-bottom: 25px;
+			font-size: 22px;
+		}
+	}
+}
+.text-wrapper {
+	.text {
+		font-size: 20px;
+		@include breakpoint(max-xxl) {
+			font-size: 18px;
+		}
+		@include breakpoint(max-sm) {
+			font-size: 16px;
+		}
+	}
+}
+#remember-me {
+	border: 3px solid #667085;
+	@include breakpoint (max-xxl) {
+		border-width: 2px;
+	}
+	&:focus {
+		box-shadow: none;
+		border-color: #0d6efd;
+	}
+}
+.login-form {
+	.checkbox-left {
+		input {
+			margin-top: 4.5px;
+			@include breakpoint (max-sm) {
+				margin-top: 0px;
+			}
+		}
+	}
+}
+.checkbox-left,
+.text-right {
+	font-size: 18px;
+	@include breakpoint(max-xxl) {
+		font-size: 15px;
+	}
+	@include breakpoint(max-sm) {
+		font-size: 12px;
+	}
+}
+.bottom-text {
+	padding-top: 60px;
+	@include breakpoint(max-xxl) {
+		padding-top: 40px;
+	}
+	p {
+		font-size: 18px;
+		@include breakpoint(max-xxl) {
+			font-size: 16px;
+		}
+		@include breakpoint(max-sm) {
+			font-size: 12px;
+			padding-top: 120px;
+		}
+	}
+	a {
+		color: #4147d5;
+		font-weight: 700;
+	}
+}
+.text-jam {
+	color: #4147d5;
+}
+
+.fs-sm-12 {
+	@include breakpoint(max-sm) {
+		font-size: 12px;
+	}
+}
+input[type="checkbox"] {
+	width: 24px;
+	height: 24px;
+	@include breakpoint (max-xxl) {
+		width: 20px;
+		height: 20px;
+	}
+	@include breakpoint (max-sm) {
+		width: 16px;
+		height: 16px;
+	}
+}
+.reset-area {
+	@include breakpoint (max-sm) {
+		margin-bottom: 210px;
+	}
+}
+.checkbox-wrapper {
+	input {
+		margin-top: 5px;
+		
+	}
+	.terms-content {
+		width: calc(100% - 24px);
+		padding-left: 20px;
+		font-size: 19px;
+		@include breakpoint (max-xxl) {
+			font-size: 15px;
+			padding-left: 15px;
+		}
+		@include breakpoint (max-sm) {
+			font-size: 14px;
+			padding-left: 10px;
+		}
+	}
+}
+
+// face-verification 
+.face-thumb {
+	@include breakpoint (max-sm) {
+		width: 207px;
+		margin: 0 auto;
+		text-align: center;
+		img {
+			width: 100%;
+		}
+	}
+}
+.info-listing {
+	li {
+		.serial {
+			width: 27px;
+			height: 27px;
+			border-radius: 50%;
+			background-color: #CF850F;
+			color: hsl(var(--white));
+			text-align: center;
+			line-height: 27px;
+			font-size: 18px;
+		}
+		.content {
+			width: calc(100% - 27px);
+			padding-left: 22px;
+			.title {
+				margin-bottom: 5px;
+			}
+			p {
+				font-size: 18px;
+				line-height: 1.5;
+				@include breakpoint (max-xxl) {
+					font-size: 16px;
+				}
+				@include breakpoint (max-sm) {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+
+// Capture Starts 
+.face-thumb-two {
+	position: relative;
+	img {
+		width: 100%;
+	}
+	.failed-text {
+		position: absolute;
+		left: 16px;
+		right: 16px;
+		bottom: 16px;
+		background-color: #C3191C;
+		border-radius: 20px;
+		color: hsl(var(--white));
+		padding: 16px 26px 16px 68px;
+		.shape {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+		}
+		.cross-btn {
+			position: absolute;
+			right: 20px;
+			top: 15px;
+			background-color: transparent;
+			border: none;
+			color: hsl(var(--white));
+			font-size: 20px;
+		}
+	}
+}

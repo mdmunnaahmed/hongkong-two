@@ -1,14 +1,40 @@
-.form-label {
-	font-size: 15px;
-}
+.label {
+		font-size: 20px;
+		color: hsl(var(--heading));
+		font-weight: 500;
+		margin-bottom: 2px;
+		@include breakpoint (max-xxl) {
+			font-size: 16px;
+		}
+		@include breakpoint (max-sm) {
+			font-size: 15px;
+		}
+	}
 .form--control {
-	height: 50px;
-	border-radius: 5px;
-	border: 1px solid hsl(var(--border));
+	height: 65px;
+	border-radius: 10px;
+	border: none;
 	outline: 0 !important;
 	box-shadow: none !important;
+	background-color: #F5F5F5;
+	font-size: 18px;
+	padding-inline: 25px;
+	@include breakpoint (max-sm) {
+		padding-inline: 20px;
+	}
+	@include breakpoint (max-xxl) {
+		font-size: 16px;
+		height: 50px;
+	}
+	@include breakpoint (max-sm) {
+		font-size: 14px;
+		height: 48px;
+	}
+	&::placeholder {
+		color: #BFBFBF;
+	}
 	&:focus {
-		border: 1px solid hsl(var(--base));
+		background-color: #F5F5F5;
 	}
 }
 textarea.form--control {
