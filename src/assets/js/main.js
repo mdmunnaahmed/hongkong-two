@@ -81,15 +81,6 @@ if (header) {
 	});
 }
 
-// Scroll To Top
-var scrollTop = $(".scrollToTop");
-$(window).on("scroll", function () {
-	if ($(this).scrollTop() < 500) {
-		scrollTop.removeClass("active");
-	} else {
-		scrollTop.addClass("active");
-	}
-});
 
 //Click event to scroll to top
 $(".scrollToTop").on("click", function () {
@@ -183,4 +174,7 @@ $("#photoVideo").on("change", function () {
 
 $(".cross-btn").on("click", function () {
 	$(".cross-btn").closest(".failed-text").remove();
+});
+$(".remove-btn").on("click", function () {
+	$(".remove-btn").closest(".uploadfile-wrapper").remove();
 });

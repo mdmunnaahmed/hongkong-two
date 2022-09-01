@@ -6,9 +6,10 @@
 	box-shadow: none !important;
 	@extend %transition;
 	border-radius: 10px;
+	font-size: 20px;
 	&.btn--lg {
 		@include breakpoint(max-xxl) {
-			padding: 10px 50px !important;
+			padding: 10px 50px;
 			font-size: 18px;
 			font-size: 16px;
 			font-weight: 500;
@@ -32,10 +33,12 @@
 	color: hsl(var(--white));
 	overflow: hidden;
 	border: 2px solid hsl(var(--base));
-
 	@include breakpoint(max-xxl) {
-		font-size: 18px;
-	}
+			padding: 10px 50px;
+			font-size: 18px;
+			font-size: 16px;
+			font-weight: 500;
+		}
 	@include breakpoint(max-lg) {
 		font-size: 16px;
 	}
@@ -69,12 +72,8 @@
 	}
 }
 .cmn--btn2 {
-	font-size: 18px;
 	background-color: hsl(var(--accent));
 	border-color: hsl(var(--accent));
-	@include breakpoint (max-lg) {
-		font-size: 16px;
-	}
 	&:hover {
 		color: hsl(var(--accent));
 	}
@@ -121,5 +120,10 @@ $colors: "primary" hsl(var(--primary)), "secondary" hsl(var(--secondary)), "succ
 		background-color: #D3D3D3;
 		color: #949494;
 		border-color: #D3D3D3;
+		&:hover {
+			background: hsl(var(--accent));
+			color: hsl(var(--white));
+			border-color: hsl(var(--white));
+		}
 	}
 }

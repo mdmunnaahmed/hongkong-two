@@ -17,3 +17,10 @@
 	line-height: 1;
 	color: hsl(var(--danger)) !important;
 }
+
+.fs--24px {
+	font-size: 24px;
+	@include breakpoint (max-xxl) {
+		font-size: 20px;
+	}
+}

@@ -38,45 +38,73 @@
 <!-- Faq Section Starts Here -->
 <div class="faq-section">
     <div class="menu-sidebar  menu-icon-text-show">
-        <div class="logo menu-icon-text"><img src="assets/images/logo.png" alt="logo"></div>
-        <div class="logo menu-icon px-3"><img src="assets/images/short-logo.png" alt="logo"></div>
-        <ul class="menu">
-            <li>
-                <a class="menu-icon-text" href="index.html"><img src="assets/images/icon/gallery.png" alt="icon"> Gallery</a>
-                <a class="menu-icon" href="index.html"><img src="assets/images/icon/gallery.png" alt="icon"></a>
-            </li>
-            <li>
-                <a class="menu-icon-text" href="profile.html"><img src="assets/images/icon/profile.png" alt="icon"> Profile</a>
-                <a class="menu-icon" href="profile.html"><img src="assets/images/icon/profile.png" alt="icon"></a>
-            </li>
-            <li>
-                <a class="menu-icon-text" href="package.html"><img src="assets/images/icon/package.png" alt="icon"> Package</a>
-                <a class="menu-icon" href="package.html"><img src="assets/images/icon/package.png" alt="icon"></a>
-            </li>
-            <li>
-                <a class="menu-icon-text" href="qr.html"><img src="assets/images/icon/qr.png" alt="icon"> My QR</a>
-                <a class="menu-icon" href="qr.html"><img src="assets/images/icon/qr.png" alt="icon"></a>
-            </li>
-            <li>
-                <a class="menu-icon-text" href="shop.html"><img src="assets/images/icon/shop.png" alt="icon"> Shop</a>
-                <a class="menu-icon" href="shop.html"><img src="assets/images/icon/shop.png" alt="icon"></a>
-            </li>
-            <li>
-                <a class="menu-icon-text" href="cart.html"><img src="assets/images/icon/cart.png" alt="icon"> Cart</a>
-                <a class="menu-icon" href="cart.html"><img src="assets/images/icon/cart.png" alt="icon"></a>
-            </li>
-        </ul>
-        <ul class="menu mt-auto menu-icon-show">
-            <li>
-                <a class="menu-icon-text" href="faq.html"><img src="assets/images/icon/faq.png" alt="icon"> FAQs</a>
-                <a class="menu-icon" href="faq.html"><img src="assets/images/icon/faq.png" alt="icon"></a>
-            </li>
-            <li>
-                <a class="logout-btn menu-icon-text" href="javascript:void(0)" class="logout-btn"><img src="assets/images/icon/logout.png" alt="icon"> Logout</a>
-                <a class="logout-btn menu-icon" href="javascript:void(0)" class="logout-btn"><img src="assets/images/icon/logout.png" alt="icon"></a>
-            </li>
-        </ul>
+    <div class="logo menu-icon-text"><img src="assets/images/logo.png" alt="logo"></div>
+    <div class="logo menu-icon px-3"><img src="assets/images/short-logo.png" alt="logo"></div>
+    <ul class="menu">
+        <li>
+            <a class="menu-icon-text" href="index.html"><img src="assets/images/icon/gallery.png" alt="icon"> Gallery</a>
+            <a class="menu-icon" href="index.html"><img src="assets/images/icon/gallery.png" alt="icon"></a>
+        </li>
+        <li>
+            <a class="menu-icon-text" href="profile.html"><img src="assets/images/icon/profile.png" alt="icon"> Profile</a>
+            <a class="menu-icon" href="profile.html"><img src="assets/images/icon/profile.png" alt="icon"></a>
+        </li>
+        <li>
+            <a class="menu-icon-text" href="package.html"><img src="assets/images/icon/package.png" alt="icon"> Package</a>
+            <a class="menu-icon" href="package.html"><img src="assets/images/icon/package.png" alt="icon"></a>
+        </li>
+        <li>
+            <a class="menu-icon-text" href="qr.html"><img src="assets/images/icon/qr.png" alt="icon"> My QR</a>
+            <a class="menu-icon" href="qr.html"><img src="assets/images/icon/qr.png" alt="icon"></a>
+        </li>
+        <li>
+            <a class="menu-icon-text" href="shop.html"><img src="assets/images/icon/shop.png" alt="icon"> Shop</a>
+            <a class="menu-icon" href="shop.html"><img src="assets/images/icon/shop.png" alt="icon"></a>
+        </li>
+        <li>
+            <a class="menu-icon-text" href="cart.html"><img src="assets/images/icon/cart.png" alt="icon"> Cart</a>
+            <a class="menu-icon" href="cart.html"><img src="assets/images/icon/cart.png" alt="icon"></a>
+        </li>
+        <li>
+            <img src="assets/images/shape/menu-middle-shape.png" alt="shape" class="menu-middle-shape w-100 h-auto">
+        </li>
+    </ul>
+    <ul class="menu mt-auto menu-icon-show">
+        <li>
+            <a class="menu-icon-text" href="faq.html"><img src="assets/images/icon/faq.png" alt="icon"> FAQs</a>
+            <a class="menu-icon" href="faq.html"><img src="assets/images/icon/faq.png" alt="icon"></a>
+        </li>
+        <li>
+            <a class="logout-btn menu-icon-text" href="javascript:void(0)" data-bs-target="#confirmModal" data-bs-toggle="modal"><img src="assets/images/icon/logout.png" alt="icon"> Logout</a>
+            <a class="logout-btn menu-icon" href="javascript:void(0)" data-bs-target="#confirmModal" data-bs-toggle="modal"><img src="assets/images/icon/logout.png" alt="icon"></a>
+        </li>
+    </ul>
+
+    <div class="mt-auto">
+        <img src="assets/images/shape/menu-bottom-shape.png" alt="shape" class="menu-bottom-shape w-100 h-auto">
     </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+            <div class="modal-body p-0">
+                <!-- Logout Success -->
+                <div class="popup-wrapper logout-modal">
+                    <div class="text-center">
+                        <img src="assets/images/icon/alert.png" alt="thumb" class="mw-100">
+                        <h4 class="mb-4 mb-sm-5 mt-4">Are You Sure !</h4>
+                    </div>
+                    <a href="javascript:void(0)" class="cmn--btn btn--lg d-block text-center mt-3 mt-sm-4 ">Confirm</a>
+                    <a href="javascript:void(0)" data-bs-dismiss="modal" class="cmn--btn d-block text-center mt-3 active modal-cancel">Cancel</a>
+                </div>
+                <!-- Logout Success -->
+
+            </div>
+        </div>
+    </div>
+</div>
     <div class="body-content">
         <div class="top-area d-none d-lg-block">
             <div class="search-box d-flex flex-wrap align-items-center">
@@ -140,48 +168,6 @@
     </div>
 </div>
 <!-- Faq Section Ends Here -->
-
-
-<!-- Gallery Popup -->
-<div class="gallery-item style--two gallery-modal">
-    <img src="assets/images/thumb/gallery1.png" alt="thumb">
-    <a href="javascript:void(0)" class="cmn--btn d-block text-center mt-3 mt-sm-4 download-btn">Download</a>
-    <a href="javascript:void(0)" class="cmn--btn d-block text-center mt-3 mt-sm-4 active share-btn">Share</a>
-</div>
-<!-- Gallery Popup -->
-
-<!-- Share Popup -->
-<div class="popup-wrapper share-modal">
-    <p class="text-center fs--20px mb-3 mb-sm-4">Share in you social networks </p>
-    <ul class="social-links d-flex flex-wrap gap-3 justify-content-center">
-        <li><a href="javascript:void(0)"><i class="fas fa-copy"></i></a></li>
-        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-        <li><a href=""><i class="fab fa-instagram"></i></a></li>
-    </ul>
-</div>
-<!-- Share Popup -->
-
-<!-- Share Success -->
-<div class="popup-wrapper success-modal">
-    <div class="d-flex flex-wrap align-items-center justify-content-center flex-column h-100">
-        <img src="assets/images/icon/success.png" alt="icon">
-        <p class="fs--20px mt-2 text-center">Download Succeeded !</p>
-    </div>
-    <span class="modal-close"><i class="las la-times"></i></span>
-</div>
-<!-- Share Success -->
-
-<!-- Logout Success -->
-<div class="popup-wrapper logout-modal">
-    <div class="text-center">
-        <img src="assets/images/icon/alert.png" alt="thumb" class="mw-100">
-        <h4 class="mb-4 mb-sm-5 mt-4">Are You Sure !</h4>
-    </div>
-    <a href="javascript:void(0)" class="cmn--btn d-block text-center mt-3 mt-sm-4 ">Confirm</a>
-    <a href="javascript:void(0)" class="cmn--btn d-block text-center mt-3 mt-sm-4 active modal-cancel">Cancel</a>
-</div>
-<!-- Logout Success -->
 
 
 

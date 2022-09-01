@@ -43,45 +43,73 @@
 <!-- Cart Section Starts Here -->
 <div class="cart-section">
     <div class="menu-sidebar  menu-icon-text-show">
-        <div class="logo menu-icon-text"><img src="assets/images/logo.png" alt="logo"></div>
-        <div class="logo menu-icon px-3"><img src="assets/images/short-logo.png" alt="logo"></div>
-        <ul class="menu">
-            <li>
-                <a class="menu-icon-text" href="index.html"><img src="assets/images/icon/gallery.png" alt="icon"> Gallery</a>
-                <a class="menu-icon" href="index.html"><img src="assets/images/icon/gallery.png" alt="icon"></a>
-            </li>
-            <li>
-                <a class="menu-icon-text" href="profile.html"><img src="assets/images/icon/profile.png" alt="icon"> Profile</a>
-                <a class="menu-icon" href="profile.html"><img src="assets/images/icon/profile.png" alt="icon"></a>
-            </li>
-            <li>
-                <a class="menu-icon-text" href="package.html"><img src="assets/images/icon/package.png" alt="icon"> Package</a>
-                <a class="menu-icon" href="package.html"><img src="assets/images/icon/package.png" alt="icon"></a>
-            </li>
-            <li>
-                <a class="menu-icon-text" href="qr.html"><img src="assets/images/icon/qr.png" alt="icon"> My QR</a>
-                <a class="menu-icon" href="qr.html"><img src="assets/images/icon/qr.png" alt="icon"></a>
-            </li>
-            <li>
-                <a class="menu-icon-text" href="shop.html"><img src="assets/images/icon/shop.png" alt="icon"> Shop</a>
-                <a class="menu-icon" href="shop.html"><img src="assets/images/icon/shop.png" alt="icon"></a>
-            </li>
-            <li>
-                <a class="menu-icon-text" href="cart.html"><img src="assets/images/icon/cart.png" alt="icon"> Cart</a>
-                <a class="menu-icon" href="cart.html"><img src="assets/images/icon/cart.png" alt="icon"></a>
-            </li>
-        </ul>
-        <ul class="menu mt-auto menu-icon-show">
-            <li>
-                <a class="menu-icon-text" href="faq.html"><img src="assets/images/icon/faq.png" alt="icon"> FAQs</a>
-                <a class="menu-icon" href="faq.html"><img src="assets/images/icon/faq.png" alt="icon"></a>
-            </li>
-            <li>
-                <a class="logout-btn menu-icon-text" href="javascript:void(0)" class="logout-btn"><img src="assets/images/icon/logout.png" alt="icon"> Logout</a>
-                <a class="logout-btn menu-icon" href="javascript:void(0)" class="logout-btn"><img src="assets/images/icon/logout.png" alt="icon"></a>
-            </li>
-        </ul>
+    <div class="logo menu-icon-text"><img src="assets/images/logo.png" alt="logo"></div>
+    <div class="logo menu-icon px-3"><img src="assets/images/short-logo.png" alt="logo"></div>
+    <ul class="menu">
+        <li>
+            <a class="menu-icon-text" href="index.html"><img src="assets/images/icon/gallery.png" alt="icon"> Gallery</a>
+            <a class="menu-icon" href="index.html"><img src="assets/images/icon/gallery.png" alt="icon"></a>
+        </li>
+        <li>
+            <a class="menu-icon-text" href="profile.html"><img src="assets/images/icon/profile.png" alt="icon"> Profile</a>
+            <a class="menu-icon" href="profile.html"><img src="assets/images/icon/profile.png" alt="icon"></a>
+        </li>
+        <li>
+            <a class="menu-icon-text" href="package.html"><img src="assets/images/icon/package.png" alt="icon"> Package</a>
+            <a class="menu-icon" href="package.html"><img src="assets/images/icon/package.png" alt="icon"></a>
+        </li>
+        <li>
+            <a class="menu-icon-text" href="qr.html"><img src="assets/images/icon/qr.png" alt="icon"> My QR</a>
+            <a class="menu-icon" href="qr.html"><img src="assets/images/icon/qr.png" alt="icon"></a>
+        </li>
+        <li>
+            <a class="menu-icon-text" href="shop.html"><img src="assets/images/icon/shop.png" alt="icon"> Shop</a>
+            <a class="menu-icon" href="shop.html"><img src="assets/images/icon/shop.png" alt="icon"></a>
+        </li>
+        <li>
+            <a class="menu-icon-text" href="cart.html"><img src="assets/images/icon/cart.png" alt="icon"> Cart</a>
+            <a class="menu-icon" href="cart.html"><img src="assets/images/icon/cart.png" alt="icon"></a>
+        </li>
+        <li>
+            <img src="assets/images/shape/menu-middle-shape.png" alt="shape" class="menu-middle-shape w-100 h-auto">
+        </li>
+    </ul>
+    <ul class="menu mt-auto menu-icon-show">
+        <li>
+            <a class="menu-icon-text" href="faq.html"><img src="assets/images/icon/faq.png" alt="icon"> FAQs</a>
+            <a class="menu-icon" href="faq.html"><img src="assets/images/icon/faq.png" alt="icon"></a>
+        </li>
+        <li>
+            <a class="logout-btn menu-icon-text" href="javascript:void(0)" data-bs-target="#confirmModal" data-bs-toggle="modal"><img src="assets/images/icon/logout.png" alt="icon"> Logout</a>
+            <a class="logout-btn menu-icon" href="javascript:void(0)" data-bs-target="#confirmModal" data-bs-toggle="modal"><img src="assets/images/icon/logout.png" alt="icon"></a>
+        </li>
+    </ul>
+
+    <div class="mt-auto">
+        <img src="assets/images/shape/menu-bottom-shape.png" alt="shape" class="menu-bottom-shape w-100 h-auto">
     </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+            <div class="modal-body p-0">
+                <!-- Logout Success -->
+                <div class="popup-wrapper logout-modal">
+                    <div class="text-center">
+                        <img src="assets/images/icon/alert.png" alt="thumb" class="mw-100">
+                        <h4 class="mb-4 mb-sm-5 mt-4">Are You Sure !</h4>
+                    </div>
+                    <a href="javascript:void(0)" class="cmn--btn btn--lg d-block text-center mt-3 mt-sm-4 ">Confirm</a>
+                    <a href="javascript:void(0)" data-bs-dismiss="modal" class="cmn--btn d-block text-center mt-3 active modal-cancel">Cancel</a>
+                </div>
+                <!-- Logout Success -->
+
+            </div>
+        </div>
+    </div>
+</div>
     <div class="body-content">
         <div class="top-area">
             <div class="search-box d-flex flex-wrap align-items-center d-none d-lg-block">
@@ -92,7 +120,6 @@
             <table class="table cart-table shadow-none table--responsive--md">
                 <thead>
                     <tr>
-                        <th></th>
                         <th class="text-start">PRODUCT</th>
                         <th></th>
                         <th>QTY</th>
@@ -101,11 +128,10 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td data-label="" class="cross-wrapper"><a href="#0" class="cross"><i class="fas fa-times"></i></a></td>
                         <td data-label="Product">
                             <div class="d-flex flex-wrap align-items-center gap-2 gap-lg-3">
                                 <div class="thumb">
-                                    <img src="assets/images/thumb/product1.png" alt="thumb">
+                                    <img src="assets/images/thumb/gallery1.png" alt="thumb">
                                 </div>
                                 <h4 class="title">My Smiles</h4>
                             </div>
@@ -123,7 +149,6 @@
                         <td data-label="Total Price"><a href="#0">$20,45</a></td>
                     </tr>
                     <tr>
-                        <td data-label="" class="cross-wrapper"><a href="#0" class="cross"><i class="fas fa-times"></i></a></td>
                         <td data-label="Product">
                             <div class="d-flex flex-wrap align-items-center gap-2 gap-lg-3">
                                 <div class="thumb">
@@ -182,16 +207,6 @@
 </div>
 <!-- Cart Section Ends Here -->
 
-<!-- Logout Success -->
-<div class="popup-wrapper logout-modal">
-    <div class="text-center">
-        <img src="assets/images/icon/alert.png" alt="thumb" class="mw-100">
-        <h4 class="mb-4 mb-sm-5 mt-4">Are You Sure !</h4>
-    </div>
-    <a href="javascript:void(0)" class="cmn--btn d-block text-center mt-3 mt-sm-4 ">Confirm</a>
-    <a href="javascript:void(0)" class="cmn--btn d-block text-center mt-3 mt-sm-4 active modal-cancel">Cancel</a>
-</div>
-<!-- Logout Success -->
 
 
 

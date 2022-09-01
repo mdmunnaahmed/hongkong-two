@@ -13,6 +13,7 @@
 	border: 1px solid hsl(var(--accent));
 	color: hsl(var(--white));
 }
+
 .badge--secondary {
 	background-color: hsl(var(--secondary) / 0.15);
 	border: 1px solid hsl(var(--secondary));
@@ -24,9 +25,9 @@
 	color: hsl(var(--success));
 }
 .badge--danger {
-	background-color: hsl(var(--danger) / 0.15);
-	border: 1px solid hsl(var(--danger));
-	color: hsl(var(--danger));
+	background-color: #FF3333;
+	border: 1px solid #FF3333;
+	color: hsl(var(--white));
 }
 .badge--warning {
 	background-color: hsl(var(--warning) / 0.15);

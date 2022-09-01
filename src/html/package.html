@@ -11,395 +11,71 @@
 
 <!-- Package Section Starts Here -->
 <div class="package-section">
-    <div class="menu-sidebar  menu-icon-text-show">
-        <div class="logo menu-icon-text"><img src="assets/images/logo.png" alt="logo"></div>
-        <div class="logo menu-icon px-3"><img src="assets/images/short-logo.png" alt="logo"></div>
-        <ul class="menu">
-            <li>
-                <a class="menu-icon-text" href="index.html"><img src="assets/images/icon/gallery.png" alt="icon"> Gallery</a>
-                <a class="menu-icon" href="index.html"><img src="assets/images/icon/gallery.png" alt="icon"></a>
-            </li>
-            <li>
-                <a class="menu-icon-text" href="profile.html"><img src="assets/images/icon/profile.png" alt="icon"> Profile</a>
-                <a class="menu-icon" href="profile.html"><img src="assets/images/icon/profile.png" alt="icon"></a>
-            </li>
-            <li>
-                <a class="menu-icon-text" href="package.html"><img src="assets/images/icon/package.png" alt="icon"> Package</a>
-                <a class="menu-icon" href="package.html"><img src="assets/images/icon/package.png" alt="icon"></a>
-            </li>
-            <li>
-                <a class="menu-icon-text" href="qr.html"><img src="assets/images/icon/qr.png" alt="icon"> My QR</a>
-                <a class="menu-icon" href="qr.html"><img src="assets/images/icon/qr.png" alt="icon"></a>
-            </li>
-            <li>
-                <a class="menu-icon-text" href="shop.html"><img src="assets/images/icon/shop.png" alt="icon"> Shop</a>
-                <a class="menu-icon" href="shop.html"><img src="assets/images/icon/shop.png" alt="icon"></a>
-            </li>
-            <li>
-                <a class="menu-icon-text" href="cart.html"><img src="assets/images/icon/cart.png" alt="icon"> Cart</a>
-                <a class="menu-icon" href="cart.html"><img src="assets/images/icon/cart.png" alt="icon"></a>
-            </li>
-        </ul>
-        <ul class="menu mt-auto menu-icon-show">
-            <li>
-                <a class="menu-icon-text" href="faq.html"><img src="assets/images/icon/faq.png" alt="icon"> FAQs</a>
-                <a class="menu-icon" href="faq.html"><img src="assets/images/icon/faq.png" alt="icon"></a>
-            </li>
-            <li>
-                <a class="logout-btn menu-icon-text" href="javascript:void(0)" class="logout-btn"><img src="assets/images/icon/logout.png" alt="icon"> Logout</a>
-                <a class="logout-btn menu-icon" href="javascript:void(0)" class="logout-btn"><img src="assets/images/icon/logout.png" alt="icon"></a>
-            </li>
-        </ul>
-    </div>
-    <div class="body-content">
-        <div class="top-area d-none d-lg-block">
-            <div class="search-box d-flex flex-wrap align-items-center">
-                <h3 class="title w-100">Digital Packages</h3>
+    @@include('../partial-html/_sidebar.html')
+    <div class="body-content position-rel">
+        <div class="section-thumb">
+            <img src="assets/images/thumb/thumb-bg.png" alt="thumb">
+        </div>
+        <div class="mobile-bg d-sm-none">
+            <img src="assets/images/thumb/mobile-bg.png" alt="thumb">
+        </div>
+        <div class="section-title">
+            <div class="thumb">
+                <img src="assets/images/thumb/title-thumb.png" alt="thumb">
+                <h3 class="title text-white">Digital Package</h3>
             </div>
         </div>
-        <div class="row justify-content-center pb-60">
-            <div class="col-lg-10">
-                <div class="cmn-section-title text-center pb-lg-3">
-                    <h2>Choose from our selection of Digital Packages</h2>
-                </div>
-                <ul class="filter package-filter nav  justify-content-center d-none d-lg-flex gap-lg-5">
-                    <li class="nav-item"><a href="#all" data-bs-toggle="tab" class="active nav-link">All</a></li>
-                    <li class="nav-item"><a href="#family" data-bs-toggle="tab" class="nav-link">Family</a></li>
-                    <li class="nav-item"><a href="#lusxury" data-bs-toggle="tab" class="nav-link">Luxury</a></li>
-                    <li class="nav-item"><a href="#havet" data-bs-toggle="tab" class="nav-link">Havet</a></li>
-                    <li class="nav-item"><a href="#fun" data-bs-toggle="tab" class="nav-link">Fun</a></li>
-                    <li class="nav-item"><a href="#sunse" data-bs-toggle="tab" class="nav-link">Sunse</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="tab-content">
-            <div class="tab-pane show fade active" id="all">
-                <div class="row justify-content-center gy-4">
-                    <div class="col-xl-4 col-lg-6 col-sm-6">
-                        <div class="package-item">
-                            <div class="package-item__thumb">
-                                <img src="assets/images/thumb/thumb.png" alt="thumb">
-                                <span class="base text-white">Unlimited</span>
-                            </div>
-                            <div class="package-item__content">
-                                <h4 class="title mb-1">My Smiles</h4>
-                                <ul class="py-3 video-photo">
-                                    <li><span class="pe-3"><i class="fas fa-video"></i></span> Unlimited Videos</li>
-                                    <li><span class="pe-3"><i class="fas fa-image"></i></span> Unlimited Photo</li>
-                                </ul>
-                                <h4 class="text--three">$20,45</h4>
-                            </div>
-                            <a href="#0" class="cmn--btn d-block text-center buy-package">Buy Now</a>
+        <div class="package-wrapper header-title-mt">
+            <div class="row justify-content-center gy-4">
+                <div class="col-xl-4 col-lg-6 col-sm-6">
+                    <div class="package-item">
+                        <div class="package-item__thumb">
+                            <img src="assets/images/thumb/gallery1.png" alt="thumb">
+                            <span class="base text-white ">Unlimited</span>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-sm-6">
-                        <div class="package-item">
-                            <div class="package-item__thumb">
-                                <img src="assets/images/thumb/thumb.png" alt="thumb">
-                                <span class="base text-white">Unlimited</span>
-                            </div>
-                            <div class="package-item__content">
-                                <h4 class="title mb-1">My Smiles</h4>
-                                <ul class="py-3 video-photo">
-                                    <li><span class="pe-3"><i class="fas fa-video"></i></span> Unlimited Videos</li>
-                                    <li><span class="pe-3"><i class="fas fa-image"></i></span> Unlimited Photo</li>
-                                </ul>
-                                <h4 class="text--three">$25,99</h4>
-                            </div>
-                            <a href="#0" class="cmn--btn d-block text-center buy-package">Buy Now</a>
+                        <div class="package-item__content">
+                            <h4 class="title mb-1">My Smiles</h4>
+                            <ul class="py-3 video-photo">
+                                <li><span class="pe-3"><i class="fas fa-video"></i></span> Unlimited Videos</li>
+                                <li><span class="pe-3"><i class="fas fa-image"></i></span> Unlimited Photo</li>
+                            </ul>
+                            <h4 class="text--three">$20,45</h4>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-sm-6">
-                        <div class="package-item">
-                            <div class="package-item__thumb">
-                                <img src="assets/images/thumb/thumb.png" alt="thumb">
-                                <span class="base text-white">Unlimited</span>
-                            </div>
-                            <div class="package-item__content">
-                                <h4 class="title mb-1">My Smiles</h4>
-                                <ul class="py-3 video-photo">
-                                    <li><span class="pe-3"><i class="fas fa-video"></i></span> Unlimited Videos</li>
-                                    <li><span class="pe-3"><i class="fas fa-image"></i></span> Unlimited Photo</li>
-                                </ul>
-                                <h4 class="text--three">$18,88</h4>
-                            </div>
-                            <a href="#0" class="cmn--btn d-block text-center buy-package">Buy Now</a>
-                        </div>
+                        <a href="javascript:void(0)" class="cmn--btn d-block text-center " data-bs-target="#package-modal" data-bs-toggle="modal">Buy Now</a>
                     </div>
                 </div>
-            </div>
-            <div class="tab-pane fade" id="family">
-                <div class="row justify-content-center gy-4">
-                    <div class="col-xl-4 col-lg-6 col-sm-6">
-                        <div class="package-item">
-                            <div class="package-item__thumb">
-                                <img src="assets/images/thumb/thumb.png" alt="thumb">
-                                <span class="base text-white">Unlimited</span>
-                            </div>
-                            <div class="package-item__content">
-                                <h4 class="title mb-1">My Smiles</h4>
-                                <ul class="py-3 video-photo">
-                                    <li><span class="pe-3"><i class="fas fa-video"></i></span> Unlimited Videos</li>
-                                    <li><span class="pe-3"><i class="fas fa-image"></i></span> Unlimited Photo</li>
-                                </ul>
-                                <h4 class="text--three">$20,45</h4>
-                            </div>
-                            <a href="#0" class="cmn--btn d-block text-center buy-package">Buy Now</a>
+                <div class="col-xl-4 col-lg-6 col-sm-6">
+                    <div class="package-item">
+                        <div class="package-item__thumb">
+                            <img src="assets/images/thumb/gallery4.png" alt="thumb">
+                            <span class="base text-white">Unlimited</span>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-sm-6">
-                        <div class="package-item">
-                            <div class="package-item__thumb">
-                                <img src="assets/images/thumb/thumb.png" alt="thumb">
-                                <span class="base text-white">Unlimited</span>
-                            </div>
-                            <div class="package-item__content">
-                                <h4 class="title mb-1">My Smiles</h4>
-                                <ul class="py-3 video-photo">
-                                    <li><span class="pe-3"><i class="fas fa-video"></i></span> Unlimited Videos</li>
-                                    <li><span class="pe-3"><i class="fas fa-image"></i></span> Unlimited Photo</li>
-                                </ul>
-                                <h4 class="text--three">$25,99</h4>
-                            </div>
-                            <a href="#0" class="cmn--btn d-block text-center buy-package">Buy Now</a>
+                        <div class="package-item__content">
+                            <h4 class="title mb-1">Happy Family</h4>
+                            <ul class="py-3 video-photo">
+                                <li><span class="pe-3"><i class="fas fa-video"></i></span> Unlimited Videos</li>
+                                <li><span class="pe-3"><i class="fas fa-image"></i></span> Unlimited Photo</li>
+                            </ul>
+                            <h4 class="text--three">$25,99</h4>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-sm-6">
-                        <div class="package-item">
-                            <div class="package-item__thumb">
-                                <img src="assets/images/thumb/thumb.png" alt="thumb">
-                                <span class="base text-white">Unlimited</span>
-                            </div>
-                            <div class="package-item__content">
-                                <h4 class="title mb-1">My Smiles</h4>
-                                <ul class="py-3 video-photo">
-                                    <li><span class="pe-3"><i class="fas fa-video"></i></span> Unlimited Videos</li>
-                                    <li><span class="pe-3"><i class="fas fa-image"></i></span> Unlimited Photo</li>
-                                </ul>
-                                <h4 class="text--three">$18,88</h4>
-                            </div>
-                            <a href="#0" class="cmn--btn d-block text-center buy-package">Buy Now</a>
-                        </div>
+                        <a href="javascript:void(0)" class="cmn--btn d-block text-center " data-bs-target="#package-modal" data-bs-toggle="modal">Buy Now</a>
                     </div>
                 </div>
-            </div>
-            <div class="tab-pane fade" id="lusxury">
-                <div class="row justify-content-center gy-4">
-                    <div class="col-xl-4 col-lg-6 col-sm-6">
-                        <div class="package-item">
-                            <div class="package-item__thumb">
-                                <img src="assets/images/thumb/thumb.png" alt="thumb">
-                                <span class="base text-white">Unlimited</span>
-                            </div>
-                            <div class="package-item__content">
-                                <h4 class="title mb-1">My Smiles</h4>
-                                <ul class="py-3 video-photo">
-                                    <li><span class="pe-3"><i class="fas fa-video"></i></span> Unlimited Videos</li>
-                                    <li><span class="pe-3"><i class="fas fa-image"></i></span> Unlimited Photo</li>
-                                </ul>
-                                <h4 class="text--three">$20,45</h4>
-                            </div>
-                            <a href="#0" class="cmn--btn d-block text-center buy-package">Buy Now</a>
+                <div class="col-xl-4 col-lg-6 col-sm-6">
+                    <div class="package-item">
+                        <div class="package-item__thumb">
+                            <img src="assets/images/thumb/gallery2.png" alt="thumb">
+                            <span class="base text-white">Unlimited</span>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-sm-6">
-                        <div class="package-item">
-                            <div class="package-item__thumb">
-                                <img src="assets/images/thumb/thumb.png" alt="thumb">
-                                <span class="base text-white">Unlimited</span>
-                            </div>
-                            <div class="package-item__content">
-                                <h4 class="title mb-1">My Smiles</h4>
-                                <ul class="py-3 video-photo">
-                                    <li><span class="pe-3"><i class="fas fa-video"></i></span> Unlimited Videos</li>
-                                    <li><span class="pe-3"><i class="fas fa-image"></i></span> Unlimited Photo</li>
-                                </ul>
-                                <h4 class="text--three">$25,99</h4>
-                            </div>
-                            <a href="#0" class="cmn--btn d-block text-center buy-package">Buy Now</a>
+                        <div class="package-item__content">
+                            <h4 class="title mb-1">Smiling Sunset</h4>
+                            <ul class="py-3 video-photo">
+                                <li><span class="pe-3"><i class="fas fa-video"></i></span> Unlimited Videos</li>
+                                <li><span class="pe-3"><i class="fas fa-image"></i></span> Unlimited Photo</li>
+                            </ul>
+                            <h4 class="text--three">$18,88</h4>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-sm-6">
-                        <div class="package-item">
-                            <div class="package-item__thumb">
-                                <img src="assets/images/thumb/thumb.png" alt="thumb">
-                                <span class="base text-white">Unlimited</span>
-                            </div>
-                            <div class="package-item__content">
-                                <h4 class="title mb-1">My Smiles</h4>
-                                <ul class="py-3 video-photo">
-                                    <li><span class="pe-3"><i class="fas fa-video"></i></span> Unlimited Videos</li>
-                                    <li><span class="pe-3"><i class="fas fa-image"></i></span> Unlimited Photo</li>
-                                </ul>
-                                <h4 class="text--three">$18,88</h4>
-                            </div>
-                            <a href="#0" class="cmn--btn d-block text-center buy-package">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="havet">
-                <div class="row justify-content-center gy-4">
-                    <div class="col-xl-4 col-lg-6 col-sm-6">
-                        <div class="package-item">
-                            <div class="package-item__thumb">
-                                <img src="assets/images/thumb/thumb.png" alt="thumb">
-                                <span class="base text-white">Unlimited</span>
-                            </div>
-                            <div class="package-item__content">
-                                <h4 class="title mb-1">My Smiles</h4>
-                                <ul class="py-3 video-photo">
-                                    <li><span class="pe-3"><i class="fas fa-video"></i></span> Unlimited Videos</li>
-                                    <li><span class="pe-3"><i class="fas fa-image"></i></span> Unlimited Photo</li>
-                                </ul>
-                                <h4 class="text--three">$20,45</h4>
-                            </div>
-                            <a href="#0" class="cmn--btn d-block text-center buy-package">Buy Now</a>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-sm-6">
-                        <div class="package-item">
-                            <div class="package-item__thumb">
-                                <img src="assets/images/thumb/thumb.png" alt="thumb">
-                                <span class="base text-white">Unlimited</span>
-                            </div>
-                            <div class="package-item__content">
-                                <h4 class="title mb-1">My Smiles</h4>
-                                <ul class="py-3 video-photo">
-                                    <li><span class="pe-3"><i class="fas fa-video"></i></span> Unlimited Videos</li>
-                                    <li><span class="pe-3"><i class="fas fa-image"></i></span> Unlimited Photo</li>
-                                </ul>
-                                <h4 class="text--three">$25,99</h4>
-                            </div>
-                            <a href="#0" class="cmn--btn d-block text-center buy-package">Buy Now</a>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-sm-6">
-                        <div class="package-item">
-                            <div class="package-item__thumb">
-                                <img src="assets/images/thumb/thumb.png" alt="thumb">
-                                <span class="base text-white">Unlimited</span>
-                            </div>
-                            <div class="package-item__content">
-                                <h4 class="title mb-1">My Smiles</h4>
-                                <ul class="py-3 video-photo">
-                                    <li><span class="pe-3"><i class="fas fa-video"></i></span> Unlimited Videos</li>
-                                    <li><span class="pe-3"><i class="fas fa-image"></i></span> Unlimited Photo</li>
-                                </ul>
-                                <h4 class="text--three">$18,88</h4>
-                            </div>
-                            <a href="#0" class="cmn--btn d-block text-center buy-package">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="fun">
-                <div class="row justify-content-center gy-4">
-                    <div class="col-xl-4 col-lg-6 col-sm-6">
-                        <div class="package-item">
-                            <div class="package-item__thumb">
-                                <img src="assets/images/thumb/thumb.png" alt="thumb">
-                                <span class="base text-white">Unlimited</span>
-                            </div>
-                            <div class="package-item__content">
-                                <h4 class="title mb-1">My Smiles</h4>
-                                <ul class="py-3 video-photo">
-                                    <li><span class="pe-3"><i class="fas fa-video"></i></span> Unlimited Videos</li>
-                                    <li><span class="pe-3"><i class="fas fa-image"></i></span> Unlimited Photo</li>
-                                </ul>
-                                <h4 class="text--three">$20,45</h4>
-                            </div>
-                            <a href="#0" class="cmn--btn d-block text-center buy-package">Buy Now</a>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-sm-6">
-                        <div class="package-item">
-                            <div class="package-item__thumb">
-                                <img src="assets/images/thumb/thumb.png" alt="thumb">
-                                <span class="base text-white">Unlimited</span>
-                            </div>
-                            <div class="package-item__content">
-                                <h4 class="title mb-1">My Smiles</h4>
-                                <ul class="py-3 video-photo">
-                                    <li><span class="pe-3"><i class="fas fa-video"></i></span> Unlimited Videos</li>
-                                    <li><span class="pe-3"><i class="fas fa-image"></i></span> Unlimited Photo</li>
-                                </ul>
-                                <h4 class="text--three">$25,99</h4>
-                            </div>
-                            <a href="#0" class="cmn--btn d-block text-center buy-package">Buy Now</a>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-sm-6">
-                        <div class="package-item">
-                            <div class="package-item__thumb">
-                                <img src="assets/images/thumb/thumb.png" alt="thumb">
-                                <span class="base text-white">Unlimited</span>
-                            </div>
-                            <div class="package-item__content">
-                                <h4 class="title mb-1">My Smiles</h4>
-                                <ul class="py-3 video-photo">
-                                    <li><span class="pe-3"><i class="fas fa-video"></i></span> Unlimited Videos</li>
-                                    <li><span class="pe-3"><i class="fas fa-image"></i></span> Unlimited Photo</li>
-                                </ul>
-                                <h4 class="text--three">$18,88</h4>
-                            </div>
-                            <a href="#0" class="cmn--btn d-block text-center buy-package">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="sunse">
-                <div class="row justify-content-center gy-4">
-                    <div class="col-xl-4 col-lg-6 col-sm-6">
-                        <div class="package-item">
-                            <div class="package-item__thumb">
-                                <img src="assets/images/thumb/thumb.png" alt="thumb">
-                                <span class="base text-white">Unlimited</span>
-                            </div>
-                            <div class="package-item__content">
-                                <h4 class="title mb-1">My Smiles</h4>
-                                <ul class="py-3 video-photo">
-                                    <li><span class="pe-3"><i class="fas fa-video"></i></span> Unlimited Videos</li>
-                                    <li><span class="pe-3"><i class="fas fa-image"></i></span> Unlimited Photo</li>
-                                </ul>
-                                <h4 class="text--three">$20,45</h4>
-                            </div>
-                            <a href="#0" class="cmn--btn d-block text-center buy-package">Buy Now</a>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-sm-6">
-                        <div class="package-item">
-                            <div class="package-item__thumb">
-                                <img src="assets/images/thumb/thumb.png" alt="thumb">
-                                <span class="base text-white">Unlimited</span>
-                            </div>
-                            <div class="package-item__content">
-                                <h4 class="title mb-1">My Smiles</h4>
-                                <ul class="py-3 video-photo">
-                                    <li><span class="pe-3"><i class="fas fa-video"></i></span> Unlimited Videos</li>
-                                    <li><span class="pe-3"><i class="fas fa-image"></i></span> Unlimited Photo</li>
-                                </ul>
-                                <h4 class="text--three">$25,99</h4>
-                            </div>
-                            <a href="#0" class="cmn--btn d-block text-center buy-package">Buy Now</a>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-sm-6">
-                        <div class="package-item">
-                            <div class="package-item__thumb">
-                                <img src="assets/images/thumb/thumb.png" alt="thumb">
-                                <span class="base text-white">Unlimited</span>
-                            </div>
-                            <div class="package-item__content">
-                                <h4 class="title mb-1">My Smiles</h4>
-                                <ul class="py-3 video-photo">
-                                    <li><span class="pe-3"><i class="fas fa-video"></i></span> Unlimited Videos</li>
-                                    <li><span class="pe-3"><i class="fas fa-image"></i></span> Unlimited Photo</li>
-                                </ul>
-                                <h4 class="text--three">$18,88</h4>
-                            </div>
-                            <a href="#0" class="cmn--btn d-block text-center buy-package">Buy Now</a>
-                        </div>
+                        <a href="javascript:void(0)" class="cmn--btn d-block text-center " data-bs-target="#package-modal" data-bs-toggle="modal">Buy Now</a>
                     </div>
                 </div>
             </div>
@@ -408,138 +84,7 @@
 </div>
 <!-- Package Section Ends Here -->
 
-
-
-<!-- Gallery Popup -->
-<div class="gallery-item style--two gallery-modal">
-    <img src="assets/images/thumb/gallery1.png" alt="thumb">
-    <a href="javascript:void(0)" class="cmn--btn d-block text-center mt-3 mt-sm-4 download-btn">Download</a>
-    <a href="javascript:void(0)" class="cmn--btn d-block text-center mt-3 mt-sm-4 active share-btn">Share</a>
-</div>
-<!-- Gallery Popup -->
-
-<!-- Share Popup -->
-<div class="popup-wrapper share-modal">
-    <p class="text-center fs--20px mb-3 mb-sm-4">Share in you social networks </p>
-    <ul class="social-links d-flex flex-wrap gap-3 justify-content-center">
-        <li><a href="javascript:void(0)"><i class="fas fa-copy"></i></a></li>
-        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-        <li><a href=""><i class="fab fa-instagram"></i></a></li>
-    </ul>
-</div>
-<!-- Share Popup -->
-
-<!-- Share Success -->
-<div class="popup-wrapper success-modal">
-    <div class="d-flex flex-wrap align-items-center justify-content-center flex-column h-100">
-        <img src="assets/images/icon/success.png" alt="icon">
-        <p class="fs--20px mt-2 text-center">Download Succeeded !</p>
-    </div>
-    <span class="modal-close"><i class="las la-times"></i></span>
-</div>
-<!-- Share Success -->
-
-<!-- Logout Success -->
-<div class="popup-wrapper logout-modal">
-    <div class="text-center">
-        <img src="assets/images/icon/alert.png" alt="thumb" class="mw-100">
-        <h4 class="mb-4 mb-sm-5 mt-4">Are You Sure !</h4>
-    </div>
-    <a href="javascript:void(0)" class="cmn--btn d-block text-center mt-3 mt-sm-4">Confirm</a>
-    <a href="javascript:void(0)" class="cmn--btn d-block text-center mt-3 mt-sm-4 active modal-cancel">Cancel</a>
-</div>
-<!-- Logout Success -->
-
-
-<!-- Logout Success -->
-<div class="package-modal" style="max-width: 500px;">
-    <div class="package-item style--two">
-        <div class="package-item__thumb">
-            <img src="assets/images/thumb/thumb.png" alt="thumb">
-            <span class="base text-white">Unlimited</span>
-        </div>
-        <div class="package-item__content">
-            <h4 class="title mb-3">My Smiles</h4>
-            <form action="">
-                <div class="form-group">
-                    <label for="" class="form-label">Choose the Date</label>
-                    <input type="date" class="form-control form--control">
-                </div>
-            </form>
-            <h4 class="text--three mt-4">$18,88</h4>
-            <a href="#0" class="btn btn--secondary mt-3 d-block text-center">Buy Now</a>
-            <a href="#0" class="btn btn--outline-secondary mt-3 d-block text-center">Add to Cart</a>
-        </div>
-    </div>
-</div>
-<!-- Logout Success -->
-
-<!-- Payment Modal -->
-<div class="popup-wrapper share-modal" style="overflow-y: auto; height: 100%;">
-    <div class="payment-wrapper">
-        <div class="row g-3">
-            <div class="col-sm-4 col-6">
-                <div class="card-item">
-                    <div class="icon"><img src="assets/images/icon/card1.png" alt="icon"></div>
-                    <h6 class="mt-2">Card</h6>
-                </div>
-            </div>
-            <div class="col-sm-4 col-6">
-                <div class="card-item">
-                    <div class="icon"><img src="assets/images/icon/card2.png" alt="icon"></div>
-                    <h6 class="mt-2">EPS</h6>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card-item">
-                    <div class="icon"><img src="assets/images/icon/card3.png" alt="icon"></div>
-                    <h6 class="mt-2">Giropay</h6>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="form-group">
-                    <label for="" class="form-label">Card Number</label>
-                    <input type="text" class="form-control form--control" placeholder="1234 1234 1234 1234">
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label for="" class="form-label">Expiry</label>
-                    <input type="text" class="form-control form--control" placeholder="MM/YY">
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label for="" class="form-label">CVC</label>
-                    <input type="text" class="form-control form--control" placeholder="CVC">
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label for="" class="form-label">Expiry</label>
-                    <select class="form-select form--control">
-                        <option value="">Hong Kong</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label for="" class="form-label">Postal Code</label>
-                    <input type="text" class="form-control form--control" placeholder="12345">
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <button class="cmn--btn btn--base active d-block w-100 mt-2">Cancel</button>
-            </div>
-            <div class="col-sm-6">
-                <button class="cmn--btn btn--base d-block w-100 mt-2">Confirm</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Payment Modal -->
-
+@@include('../partial-html/_modals.html')
 @@include('../partial-html/_footer.html')
 @@include('../partial-html/_template-bottom.html')
 </body>
