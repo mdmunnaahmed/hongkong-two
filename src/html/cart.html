@@ -23,7 +23,7 @@
                 <h3 class="title w-100">Cart</h3>
             </div>
         </div>
-        <div class="table-wrapper">
+        <div class="table-wrapper d-none d-md-block">
             <table class="table cart-table shadow-none table--responsive--md">
                 <thead>
                     <tr>
@@ -104,7 +104,112 @@
                                     <span>$46,44</span>
                                 </li>
                             </ul>
-                            <a href="#0" class="cmn--btn d-block text-center">Check out</a>
+                            <a href="#0" class="cmn--btn d-block text-center" data-bs-target="#popup-wrapper" data-bs-toggle="modal">Check out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-md-none mt-4">
+            <div class="mobile-table-wrapper">
+                <div class="mobile-item d-flex flex-wrap justify-content-between">
+                    <div class="content-wrapper d-flex flex-wrap align-items-center">
+                        <div class="thumb">
+                            <img src="assets/images/thumb/mobile1.png" alt="thumb">
+                        </div>
+                        <div class="content">
+                            <h6 class="title fs--16px text--accent">My smiles</h6>
+                            <p class="fs--12px fw-bold d-block mb-0 text--base">$20.45</p>
+                        </div>
+                    </div>
+                    <div class="content-right">
+                        <div class="cart-right cart-control-bg">
+                            <form action="#" class="d-flex align-items-center justify-content-center">
+                                <span class="minus-plus cart-minus"><i class="fas fa-minus"></i></span>
+                                <input type="text" value="1" class="product-number text-center mx-2">
+                                <span class="minus-plus cart-plus"><i class="fas fa-plus"></i></span>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="delete-thumb">
+                        <img src="assets/images/icon/delete.png" alt="icon">
+                    </div>
+                </div>
+                <div class="mobile-item d-flex flex-wrap justify-content-between">
+                    <div class="content-wrapper d-flex flex-wrap align-items-center">
+                        <div class="thumb">
+                            <img src="assets/images/thumb/mobile2.png" alt="thumb">
+                        </div>
+                        <div class="content">
+                            <h6 class="title fs--16px text--accent">Happy Family</h6>
+                            <p class="fs--12px fw-bold d-block mb-0 text--base">$25.99</p>
+                        </div>
+                    </div>
+                    <div class="content-right">
+                        <div class="cart-right cart-control-bg">
+                            <form action="#" class="d-flex align-items-center justify-content-center">
+                                <span class="minus-plus cart-minus"><i class="fas fa-minus"></i></span>
+                                <input type="text" value="2" class="product-number text-center mx-2">
+                                <span class="minus-plus cart-plus"><i class="fas fa-plus"></i></span>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="delete-thumb2">
+                        <img src="assets/images/icon/delete.png" alt="icon">
+                    </div>
+                </div>
+                <div class="mobile-item d-flex flex-wrap justify-content-between">
+                    <div class="content-wrapper d-flex flex-wrap align-items-center">
+                        <div class="thumb">
+                            <img src="assets/images/thumb/mobile3.png" alt="thumb">
+                        </div>
+                        <div class="content">
+                            <h6 class="title fs--16px text--accent">Luxury</h6>
+                            <p class="fs--12px fw-bold d-block mb-0 text--base">$35.22</p>
+                        </div>
+                    </div>
+                    <div class="content-right">
+                        <div class="cart-right cart-control-bg">
+                            <form action="#" class="d-flex align-items-center justify-content-center">
+                                <span class="minus-plus cart-minus"><i class="fas fa-minus"></i></span>
+                                <input type="text" value="1" class="product-number text-center mx-2">
+                                <span class="minus-plus cart-plus"><i class="fas fa-plus"></i></span>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="delete-thumb3">
+                        <img src="assets/images/icon/delete.png" alt="icon">
+                    </div>
+                </div>
+            </div>
+            <div class="cart-bottom">
+                <p class="pb-2 pt-4 fs--12px text-center">Get the others</p>
+                <div class="row justify-content-between gy-5">
+                    <div class="col-md-6 col-xl-4">
+                        <form class="voucher-form">
+                            <div class="from-group">
+                                <input type="text" placeholder="Enter Cupon Code" class="form-control form--control">
+                            </div>
+                            <button type="submit" class="btn cmn--btn">Apply</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="checkout-box">
+                            <ul class="checkout-list">
+                                <li class="d-flex flex-wrap justify-content-between">
+                                    <span>Subtotal</span>
+                                    <span>$160,45</span>
+                                </li>
+                                <li class="d-flex flex-wrap justify-content-between">
+                                    <span>Coupon</span>
+                                    <span>0,00</span>
+                                </li>
+                                <li class="d-flex flex-wrap justify-content-between py-3">
+                                    <span>Total</span>
+                                    <span class="right-text">$46,44</span>
+                                </li>
+                            </ul>
+                            <a href="#0" class="cmn--btn d-block text-center" data-bs-target="#popup-wrapper" data-bs-toggle="modal">Pay</a>
                         </div>
                     </div>
                 </div>
@@ -114,6 +219,7 @@
 </div>
 <!-- Cart Section Ends Here -->
 
+@@include('../partial-html/_modals.html')
 
 @@include('../partial-html/_footer.html')
 @@include('../partial-html/_template-bottom.html')

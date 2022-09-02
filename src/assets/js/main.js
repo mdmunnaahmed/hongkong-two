@@ -178,3 +178,16 @@ $(".cross-btn").on("click", function () {
 $(".remove-btn").on("click", function () {
 	$(".remove-btn").closest(".uploadfile-wrapper").remove();
 });
+$(".delete-thumb").on("click", function () {
+	$(".delete-thumb").closest(".mobile-item").remove();
+});
+$(".delete-thumb2").on("click", function () {
+	$(".delete-thumb2").closest(".mobile-item").remove();
+});
+$(".delete-thumb3").on("click", function () {
+	$(".delete-thumb3").closest(".mobile-item").remove();
+});
+
+$(".pricing-item").on("click", function (e) {
+	$(this).children(".pricing-collapse-content").slideToggle();
+});

@@ -9,10 +9,9 @@
 	font-size: 20px;
 	&.btn--lg {
 		@include breakpoint(max-xxl) {
-			padding: 10px 50px;
-			font-size: 18px;
 			font-size: 16px;
 			font-weight: 500;
+			padding: 10px 65px;
 		}
 	}
 	&.btn--md {
@@ -34,17 +33,10 @@
 	overflow: hidden;
 	border: 2px solid hsl(var(--base));
 	@include breakpoint(max-xxl) {
-			padding: 10px 50px;
-			font-size: 18px;
 			font-size: 16px;
 			font-weight: 500;
+			padding: 10px 65px;
 		}
-	@include breakpoint(max-lg) {
-		font-size: 16px;
-	}
-	@include breakpoint(max-sm) {
-		padding: 8px 30px;
-	}
 	&.login-btn {
 		background-color: #D3D3D3;
 		color: #949494;
