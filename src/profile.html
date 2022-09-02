@@ -107,7 +107,7 @@
 </div>
     <div class="body-content">
         <div class="body-content-shape-one w-100">
-            <img src="assets/images/shape/body-shape-two.png" alt="shape">
+            <img src="assets/images/shape/body-shape-one.png" alt="shape">
         </div>
         <div class="top-area d-none d-lg-block">
             <div class="search-box d-flex flex-wrap align-items-center">
@@ -125,7 +125,7 @@
                     <li><span class="pe-3"><img src="assets/images/icon/mail.png" alt="icon"></span> Brebes, Sirampog</li>
                 </ul>
             </div>
-            <a href="#0" class="cmn--btn btn--lg">Settings</a>
+            <a href="#0" class="cmn--btn btn--md">Settings</a>
         </div>
         <div class="package-table mb-4">
             <h5 class="table-title mb-4">QR Packages</h5>
@@ -183,31 +183,28 @@
             </div>
             <div class="col-xxl-6">
                 <div class="package-table">
-                    <h5 class="table-title mb-4">Shop Order</h5>
+                    <h5 class="table-title mb-4">Online Purchased Packages</h5>
                     <table class="table border-0 w-100   table--responsive--md">
                         <thead>
                             <tr>
-                                <th>Order#</th>
-                                <th>Date</th>
-                                <th>Delivery</th>
-                                <th>Price</th>
-                                <th>Refund</th>
+                                <th>Package</th>
+                                <th>From</th>
+                                <th>To</th>
+                                <th>Status</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td data-label="Order#">20220100289</td>
-                                <td data-label="Date">2022-1-27</td>
-                                <td data-label="Delivery">Pick Up</td>
-                                <td data-label="Price">hkd 100.00</td>
-                                <td data-label="Refund"><a href="#0" class="badge badge--three text-white">Apply</a></td>
+                                <td data-label="Package">20220100289</td>
+                                <td data-label="From">2022-04-23</td>
+                                <td data-label="To">2022-04-24</td>
+                                <td data-label="Status">Deactive</td>
                             </tr>
                             <tr>
-                                <td data-label="Order#"">20220100289</td>
-                                <td data-label=" Date">2022-1-27</td>
-                                <td data-label="Delivery">Pick Up</td>
-                                <td data-label="Price">hkd 100.00</td>
-                                <td data-label="Refund"><a href="#0" class="badge badge--danger text-white">Rejected</a></td>
+                                <td data-label="Package">20220100289</td>
+                                <td data-label="From">2022-04-23</td>
+                                <td data-label="To">2022-04-24</td>
+                                <td data-label="Status">Deactive</td>
                             </tr>
                         </tbody>
                     </table>
@@ -324,6 +321,90 @@
 </div>
 
 <!-- Modal -->
+<div class="modal fade" id="shareModalThree" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content  bg-transparent border-0">
+            <div class="modal-body p-0">
+                <!-- Share Popup -->
+                <div class="popup-wrapper share-modal">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h6>Share</h6>
+                        <p class="mb-0">Selected (0 / 4)</p>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="gallery-item video-item">
+                                <div class="form-group select-item position-relative">
+                                    <div class="bg-overlay">
+                                        <input type="checkbox" id="check05">
+                                        <label for="check05">
+                                            <img src="assets/images/thumb/video1.png" alt="thumb">
+                                            <a href="#0" class="create-video text-center video-icon style--two" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                                <i class="fas fa-play"></i>
+                                            </a>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="gallery-item video-item">
+                                <div class="form-group select-item position-relative">
+                                    <div class="bg-overlay">
+                                        <input type="checkbox" id="check06">
+                                        <label for="check06">
+                                            <img src="assets/images/thumb/video2.png" alt="thumb">
+                                            <a href="#0" class="create-video text-center video-icon style--two" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                                <i class="fas fa-play"></i>
+                                            </a>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="gallery-item video-item">
+                                <div class="form-group select-item position-relative">
+                                    <div class="bg-overlay">
+                                        <input type="checkbox" id="check07">
+                                        <label for="check07">
+                                            <img src="assets/images/thumb/video3.png" alt="thumb">
+                                            <a href="#0" class="create-video text-center video-icon style--two" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                                <i class="fas fa-play"></i>
+                                            </a>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="gallery-item video-item">
+                                <div class="form-group select-item position-relative">
+                                    <div class="bg-overlay">
+                                        <input type="checkbox" id="check08">
+                                        <label for="check08">
+                                            <img src="assets/images/thumb/video4.png" alt="thumb">
+                                            <a href="#0" class="create-video text-center video-icon style--two" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                                <i class="fas fa-play"></i>
+                                            </a>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap mt-3 mt-sm-4 gap-2">
+                        <button class="cmn--btn btn--md active flex-grow-1" data-bs-dismiss="modal">Cancel</button>
+                        <button class="cmn--btn btn--md flex-grow-1">Share</button>
+                    </div>
+                </div>
+                <!-- Share Popup -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
 <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content bg-transparent border-0">
@@ -372,26 +453,26 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content bg-transparent border-0">
             <div class="modal-body p-0">
-            <div class="package-modal" style="max-width: 500px;">
-                <div class="package-item style--two">
-                    <div class="package-item__thumb">
-                        <img src="assets/images/thumb/gallery1.png" alt="thumb">
-                        <span class="base text-white">Unlimited</span>
-                    </div>
-                    <div class="package-item__content">
-                        <h4 class="title mb-3">My Smiles</h4>
-                        <form action="">
-                            <div class="form-group">
-                                <label for="" class="form-label">Choose the Date</label>
-                                <input type="date" class="form-control form--control">
-                            </div>
-                        </form>
-                        <h4 class="text--three mt-4">$18,88</h4>
-                        <a href="javascript:void(0)" class="cmn--btn mt-3 d-block text-center" data-bs-target="#popup-wrapper" data-bs-toggle="modal">Buy Now</a>
-                        <a href="#0" class="cmn--btn mt-3 d-block text-center btn--outline-light">Add to Cart</a>
+                <div class="package-modal" style="max-width: 500px;">
+                    <div class="package-item style--two">
+                        <div class="package-item__thumb">
+                            <img src="assets/images/thumb/gallery1.png" alt="thumb">
+                            <span class="base text-white">Unlimited</span>
+                        </div>
+                        <div class="package-item__content">
+                            <h4 class="title mb-3">My Smiles</h4>
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="" class="form-label">Choose the Date</label>
+                                    <input type="date" class="form-control form--control">
+                                </div>
+                            </form>
+                            <h4 class="text--three mt-4">$18,88</h4>
+                            <a href="javascript:void(0)" class="cmn--btn mt-3 d-block text-center" data-bs-target="#popup-wrapper" data-bs-toggle="modal">Buy Now</a>
+                            <a href="#0" class="cmn--btn mt-3 d-block text-center btn--outline-light">Add to Cart</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
             </div>
         </div>
@@ -459,10 +540,10 @@
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <button class="cmn--btn active d-block w-100 mt-2">Cancel</button>
+                                <button class="cmn--btn active px-2 d-block w-100 mt-2" data-bs-dismiss="modal">Cancel</button>
                             </div>
                             <div class="col-sm-6">
-                                <button class="cmn--btn d-block w-100 mt-2">Confirm</button>
+                                <button class="cmn--btn px-2 d-block w-100 mt-2">Confirm</button>
                             </div>
                         </div>
                     </div>
@@ -516,6 +597,7 @@
 
 <!-- Main js -->
 <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
