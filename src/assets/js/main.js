@@ -173,7 +173,7 @@ $(".cross-btn").on("click", function () {
 $(".remove-btn").on("click", function () {
 	$(".remove-btn").closest(".uploadfile-wrapper").remove();
 });
-<<<<<<< HEAD
+
 $(".delete-thumb").on("click", function () {
 	$(".delete-thumb").closest(".mobile-item").remove();
 });
@@ -187,5 +187,11 @@ $(".delete-thumb3").on("click", function () {
 $(".pricing-item").on("click", function (e) {
 	$(this).children(".pricing-collapse-content").slideToggle();
 });
-=======
->>>>>>> 84c1c7ad972134e71d684ae00703a52cb7c8eef8
+
+var itemCount = document.querySelectorAll(".gallery-item-count div .gallery-item");
+$(".totalGalleryCount").text(itemCount.length);
+
+$(".gallery-item input").on("click", function () {
+	var numberOfChecked = $(".gallery-item input:checkbox:checked").length;
+	$(".selectedGalleryCount").text(numberOfChecked);
+});
