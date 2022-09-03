@@ -72,6 +72,11 @@
 			min-width: 150px;
 		}
 	}
+	.nav-tabs {
+		@include breakpoint (max-sm) {
+			margin-inline: -30px;
+		}
+	}
 	.cmn--btn {
 		padding-top: 10px;
 		padding-bottom: 10px;
@@ -548,11 +553,32 @@ div[class*="col"]:nth-child(2) {
 // Profile Section Ends Here
 
 // Package Section Starts Here
+.package-wrapper {
+	@include breakpoint (max-sm) {
+		margin-inline: -15px;
+		padding-inline: 18px;
+		background-color: hsl(var(--white));
+		border-radius: 20px;
+		margin-top: 120px !important;
+		outline: 1px solid #C8C8C8;
+		padding-bottom: 15px;
+		.row {
+			gap: 0px;
+			
+			.col-6 {
+				padding: 0 5px !important;
+			}
+		}
+	}
+}
 .package-item {
 	border-radius: 20px;
 	overflow: hidden;
 	box-shadow: 0px 0px 3px hsl(var(--dark) / 0.5);
 	background-color: hsl(var(--white));
+	@include breakpoint (max-sm) {
+		border-radius: 5px;
+	}
 	&__thumb {
 		position: relative;
 		.base {
@@ -569,6 +595,13 @@ div[class*="col"]:nth-child(2) {
 				font-size: 15px;
 				border-radius: 5px;
 			}
+			@include breakpoint(max-sm) {
+				font-size: 13px;
+				padding: 2px 10px;
+				top: 8px;
+				left: 11px;
+				background-color: #FF0026;
+			}
 		}
 		img {
 			width: 100%;
@@ -576,14 +609,47 @@ div[class*="col"]:nth-child(2) {
 	}
 	&__content {
 		padding: 30px;
+		.title {
+			@include breakpoint (max-sm) {
+				font-size: 12px;
+			}
+		}
+		@include breakpoint (max-sm) {
+			padding: 16px;
+		}
 		.video-photo {
+			@include breakpoint (max-sm) {
+				font-size: 9px;
+				li {
+					display: flex;
+					align-items: center;
+				}
+			}
+			
 			span {
 				color: #c9b4b4;
+				@include breakpoint (max-sm) {
+					font-size: 15px;
+				}
+			}
+		}
+		.text--three {
+			@include breakpoint (max-sm) {
+				font-size: 12px;
 			}
 		}
 	}
 	.cmn--btn {
 		border-radius: 0 0 5px 5px;
+		@include breakpoint (max-sm) {
+			border-radius: 5px;
+			font-size: 13px;
+			font-weight: 500;
+			margin-top: 17px;
+			padding-top: 8px !important;
+			padding-bottom: 8px !important;
+			line-height: 1;
+		}
 		&:hover {
 			background-color: hsl(var(--accent));
 			color: hsl(Var(--white));
@@ -606,6 +672,9 @@ div[class*="col"]:nth-child(2) {
 	}
 	@include breakpoint(max-sm) {
 		padding: 23px 20px;
+		border-radius: 20px;
+		margin: 0 -20px;
+		margin-top: 105px !important;
 	}
 }
 .cart-item {
@@ -640,6 +709,7 @@ div[class*="col"]:nth-child(2) {
 		@include breakpoint(max-sm) {
 			padding-top: 10px;
 			padding-bottom: 10px;
+			font-size: 15px;
 		}
 	}
 }
@@ -678,7 +748,22 @@ div[class*="col"]:nth-child(2) {
 		}
 	}
 }
-
+.cart-content-wrapper {
+	@include breakpoint (max-sm) {
+		.title {
+			font-size: 14px;
+		}
+		.price {
+			font-size: 14px;
+		}
+		.minus-plus, .product-number {
+			color: #3E4958 !important;
+		}
+		.product-number {
+			background-color: #EBF0FF;
+		}
+	}
+}
 // Shop Section Ends Here
 
 // QR Section Starts Here
@@ -707,6 +792,7 @@ div[class*="col"]:nth-child(2) {
 		height: 100%;
 		object-fit: cover;
 		@include breakpoint(max-sm) {
+			height: 100vh;
 			object-fit: fill;
 		}
 	}
@@ -1423,6 +1509,9 @@ input[type="checkbox"] {
 			}
 			&.package-title {
 				font-size: 24px;
+				@include breakpoint(max-xxl) {
+					max-width: 200px;
+				}
 				@include breakpoint(max-sm) {
 					font-size: 16px;
 					max-width: 120px;
