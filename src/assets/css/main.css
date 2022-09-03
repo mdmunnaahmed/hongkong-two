@@ -2249,6 +2249,7 @@ div[class*=col]:nth-child(2) .video-item::before {
 @media (max-width: 1399px) {
     .body-content {
         padding-inline: 40px;
+        height: 100%;
     }
 }
 
@@ -2466,13 +2467,50 @@ div[class*=col]:nth-child(2) .video-item::before {
     font-size: 13px;
 }
 
+.package-wrapper {
+    padding: 40px 58px;
+    border-radius: 50px;
+    background-color: hsl(var(--white));
+    margin: 0 20px;
+}
+
+@media (max-width: 1199px) {
+    .package-wrapper {
+        padding: 35px 50px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .package-wrapper {
+        margin: 0;
+        padding-inline: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .package-wrapper {
+        padding: 0;
+    }
+}
+
+.package-wrapper .row .package-item {
+    margin: 0 22px;
+}
+
+@media (max-width: 1399px) {
+    .package-wrapper .row .package-item {
+        margin: 0;
+    }
+}
+
 @media (max-width: 575px) {
     .package-wrapper {
         margin-inline: -15px;
         padding-inline: 18px;
         background-color: hsl(var(--white));
         border-radius: 20px;
-        margin-top: 120px !important;
+        margin-top: 127px !important;
         outline: 1px solid #C8C8C8;
         padding-bottom: 15px;
     }
@@ -2623,7 +2661,7 @@ div[class*=col]:nth-child(2) .video-item::before {
         padding: 23px 20px;
         border-radius: 20px;
         margin: 0 -20px;
-        margin-top: 105px !important;
+        margin-top: 115px !important;
     }
 }
 
@@ -2753,12 +2791,12 @@ div[class*=col]:nth-child(2) .video-item::before {
 }
 
 .header-title-mt-two {
-    margin-top: 200px;
+    margin-top: 235px;
 }
 
 @media (max-width: 1399px) {
     .header-title-mt-two {
-        margin-top: 130px;
+        margin-top: 170px;
     }
 }
 
@@ -2779,12 +2817,17 @@ div[class*=col]:nth-child(2) .video-item::before {
     object-fit: cover;
 }
 
-@media (max-width: 575px) {
-    .section-thumb img,
-.mobile-bg img {
-        height: 100vh;
-        object-fit: fill;
-    }
+.section-thumb-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.section-thumb-bottom img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .mobile-bg {
@@ -3579,9 +3622,15 @@ input[type=checkbox] {
 
 .section-title {
     position: absolute;
-    top: 7%;
+    top: 12%;
     left: 50%;
     transform: translateX(-50%);
+}
+
+@media (max-width: 1399px) {
+    .section-title {
+        top: 10%;
+    }
 }
 
 @media (max-width: 991px) {
@@ -3593,6 +3642,7 @@ input[type=checkbox] {
 @media (max-width: 575px) {
     .section-title {
         top: 1.5%;
+        left: 53%;
         max-width: 180px;
     }
 }

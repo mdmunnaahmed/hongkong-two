@@ -370,6 +370,7 @@ div[class*="col"]:nth-child(2) {
 	overflow-y: auto;
 	@include breakpoint(max-xxl) {
 		padding-inline: 40px;
+		height: 100%;
 	}
 	@include breakpoint(max-lg) {
 		width: 100%;
@@ -387,6 +388,7 @@ div[class*="col"]:nth-child(2) {
 		right: 0;
 		object-fit: contain;
 		z-index: -1;
+		
 		img {
 			width: 100%;
 		}
@@ -554,12 +556,35 @@ div[class*="col"]:nth-child(2) {
 
 // Package Section Starts Here
 .package-wrapper {
+	padding: 40px 58px;
+    border-radius: 50px;
+    background-color: hsl(var(--white));
+	margin: 0 20px;
+	@include breakpoint (max-xl) {
+		padding: 35px 50px;
+		margin: 0;
+	}
+	@include breakpoint (max-lg) {
+		margin: 0;
+		padding-inline: 20px;
+	}
+	@include breakpoint (max-sm) {
+		padding: 0;
+	}
+	.row {
+		.package-item {
+			margin: 0 22px;
+			@include breakpoint (max-xxl) {
+				margin: 0;
+			}
+		}
+	}
 	@include breakpoint (max-sm) {
 		margin-inline: -15px;
 		padding-inline: 18px;
 		background-color: hsl(var(--white));
 		border-radius: 20px;
-		margin-top: 120px !important;
+		margin-top: 127px !important;
 		outline: 1px solid #C8C8C8;
 		padding-bottom: 15px;
 		.row {
@@ -674,7 +699,7 @@ div[class*="col"]:nth-child(2) {
 		padding: 23px 20px;
 		border-radius: 20px;
 		margin: 0 -20px;
-		margin-top: 105px !important;
+		margin-top: 115px !important;
 	}
 }
 .cart-item {
@@ -774,9 +799,9 @@ div[class*="col"]:nth-child(2) {
 	}
 }
 .header-title-mt-two {
-	margin-top: 200px;
+	margin-top: 235px;
 	@include breakpoint(max-xxl) {
-		margin-top: 130px;
+		margin-top: 170px;
 	}
 }
 .section-thumb,
@@ -791,10 +816,19 @@ div[class*="col"]:nth-child(2) {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		@include breakpoint(max-sm) {
-			height: 100vh;
-			object-fit: fill;
-		}
+		
+	}
+}
+.section-thumb-bottom {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		
 	}
 }
 .mobile-bg {
@@ -1468,15 +1502,18 @@ input[type="checkbox"] {
 // Section Title Starts
 .section-title {
 	position: absolute;
-	top: 7%;
+	top: 12%;
 	left: 50%;
 	transform: translateX(-50%);
-
+	@include breakpoint(max-xxl) {
+		top: 10%;
+	}
 	@include breakpoint(max-lg) {
 		top: 2.5%;
 	}
 	@include breakpoint(max-sm) {
 		top: 1.5%;
+		left: 53%;
 		max-width: 180px;
 	}
 	.thumb {
