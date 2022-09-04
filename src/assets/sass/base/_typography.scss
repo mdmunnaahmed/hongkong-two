@@ -54,6 +54,9 @@ h3 {
 }
 h4 {
 	font-size: 24px;
+	@include max(1600px) {
+		font-size: 19px;  
+	}
 	@include breakpoint(max-xxl) {
 		font-size: 19px;
 	}

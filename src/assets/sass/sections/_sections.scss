@@ -282,6 +282,9 @@ div[class*="col"]:nth-child(2) {
 	overflow-y: auto;
 	display: flex;
 	flex-direction: column;
+	@include max (1600px) {
+		width: 280px;
+	}
 	&::-webkit-scrollbar {
 		display: none;
 	}
@@ -368,6 +371,9 @@ div[class*="col"]:nth-child(2) {
 	z-index: 11;
 	overflow: hidden;
 	overflow-y: auto;
+	@include max(1600px) {
+		width: calc(100% - 280px);
+	}
 	@include breakpoint(max-xxl) {
 		padding-inline: 40px;
 		height: 100%;
@@ -685,6 +691,11 @@ div[class*="col"]:nth-child(2) {
 // Package Section Ends Here
 
 // Shop Section Starts Here
+.shop-section {
+	.body-content {
+		padding-inline: 40px;
+	}
+}
 .shop-wrapper {
 	padding: 60px 40px;
 	border-radius: 50px;
@@ -724,14 +735,14 @@ div[class*="col"]:nth-child(2) {
 		font-size: 20px;
 		padding: 6px 18px;
 		border-radius: 10px;
-		@include breakpoint(max-xxl) {
+		@include max(1600px) {
 			padding: 3px 12px;
 			font-size: 14px;
 		}
 	}
 	.cmn--btn {
 		font-family: var(--other-font);
-		@include breakpoint(max-sm) {
+		@include max(1600px) {
 			padding-top: 10px;
 			padding-bottom: 10px;
 			font-size: 15px;
@@ -748,7 +759,7 @@ div[class*="col"]:nth-child(2) {
 		font-size: 18px;
 		font-weight: 600;
 		color: #3e4958;
-		@include breakpoint(max-xxl) {
+		@include max(1600px) {
 			width: 40px;
 			height: 40px;
 			font-size: 16px;
@@ -765,7 +776,7 @@ div[class*="col"]:nth-child(2) {
 		cursor: pointer;
 		font-size: 18px;
 		color: #3e4958;
-		@include breakpoint(max-xxl) {
+		@include max(1600px) {
 			font-size: 13px;
 		}
 		@include breakpoint(max-md) {
